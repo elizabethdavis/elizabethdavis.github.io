@@ -12,6 +12,31 @@ body {
 	border-color: black;
 }
 
+div.1col {
+
+}
+
+div.2col {
+	float: left;
+	width: 50%;
+}
+
+div.3col {
+
+}
+
+div.4col {
+
+}
+
+.row:after{
+	content: "";
+	display: table;
+	clear:both;
+}
+
+
+
 footer {
 	padding: 20px;
 	text-align: center;
