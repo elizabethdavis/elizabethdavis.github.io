@@ -3,6 +3,15 @@ body {
   background-color: #ffffff;
 }
 
+.card {
+	background-color: white;
+	padding: 20px;
+	margin-top: 20px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+}
+
 footer {
 	padding: 20px;
 	text-align: center;
