@@ -4,28 +4,50 @@ body {
 }
 
 h1 {
-	font-family: 'Playlist-Script';
+	font-family: 'Poppins', 'sans-serif';
+	font-weight: 600;
+	font-size: 28px;
+}
+
+h2 {
+	font-family: 'Poppins', 'sans-serif';
+	font-weight: 600;
+	font-size: 24px;
+	color: #2375F0;
 }
 
 h3 {
-	font-family: Playlist-Caps;
+	font-family: 'Poppins', 'sans-serif';
+	font-weight: 400;
 	font-size: 18px;
+}
+
+a {
+	font-family: 'Raleway', 'sans-serif';
+	font-size: 14px;
+	font-weight: 400;
+}
+
+p {
+	font-family: 'Raleway', 'sans-serif';
+	font-size: 14px;
+	font-weight: 400;
 }
 
 .header {
 	overflow: hidden;
-	background-color: #f1f1f1;
-	padding: 20px 10px;
+	background-color: #ffffff;
+	padding: 30px 0px 15px 0px;
 	z-index: 1000;
+	border-bottom: 2px solid lightgray;
 }
 
 .header a {
 	float: left;
 	color: black;
 	text-align: center;
-	padding: 20px 10px;
 	text-decoration: none;
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 25px;
 	border-radius: 4px;
 	z-index: 1000;
@@ -33,18 +55,14 @@ h3 {
 
 .header a.logo {
 	font-size: 35px;
-	font-weight: bold;
-	font-family: 'Playlist-Script';
-}
-
-.header a.active {
-	background-color: dodgerblue;
-	color: white;
+	font-weight: 600;
+	font-family: 'Poppins', 'sans-serif';
+	text-align: left;
 }
 
 .header-right {
 	float: right;
-	padding-right: 50px;
+	padding-right: 30px;
 }
 
 .content {
@@ -58,7 +76,7 @@ h3 {
 }
 
 .sticky + .content {
-	padding-top: 150px;
+	padding-top: 120px;
 }
 
 @media screen and (max-width: 600px) {
@@ -67,29 +85,6 @@ h3 {
 		display: block;
 		text-align: left;
 	}
-
-	.header-right {
-		float: none;
-	}
-
-}
-
-@font-face {
-	font-family: 'Playlist-Script';
-	src:url('fonts/Playlist-Script.ttf.woff') format('woff'),
-		url('fonts/Playlist-Script.ttf.svg#Playlist-Script') format('svg'),
-		url('fonts/Playlist-Script.ttf.eot'),
-		url('fonts/Playlist-Script.ttf.eot?#iefix') format('embedded-opentype');
-	font-weight: normal;
-	font-style: normal;
-
-	font-family: 'Playlist-Caps';
-	src:url('fonts/Playlist-Caps.ttf.woff') format('woff'),
-		url('fonts/Playlist-Caps.ttf.svg#Playlist-Caps') format('svg'),
-		url('fonts/Playlist-Caps.ttf.eot'),
-		url('fonts/Playlist-Caps.ttf.eot?#iefix') format('embedded-opentype');
-	font-weight: normal;
-	font-style: normal;
 }
 
 .row:after {
@@ -98,13 +93,8 @@ h3 {
 	clear: both;
 }
 
-#container {
-	text-align: center;
-	padding: 20px;
-}
-
 .content {
-	padding: 40px;
+	padding: 30px 50px;
 }
 
 #resume {
@@ -113,17 +103,33 @@ h3 {
 }
 
 .button {
-	background-color: #15B2D1;
-	border: none;
+	background-color: #ffffff;
+	border: solid 1px black;
 	color: black;
 	padding: 15px 40px 15px 40px;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
-	font-size: 16px;
 	margin: 4px 2px;
 	border-radius: 30px;
-	font-family: 'Playlist-Caps';
+	font-family: 'Poppins', 'sans-serif';
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.button:hover {
+	background-color: #2375F0;
+	color: white;
+	border: solid 1px white;
+}
+
+.navbtn {
+	background-color: #ffffff;
+	color: white;
+}
+
+.active {
+
 }
 
 .responsive {
@@ -131,18 +137,34 @@ h3 {
 	height: auto;
 }
 
+/* Footer */
 .footer {
 	padding: 20px;
 	text-align: left;
 	background-color: #dddddd;
 }
 
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-}
-
 * {
 	box-sizing: border-box;
+}
+
+/* Fonts */
+@font-face {
+	font-family: 'Playlist-Script';
+	src:url('fonts/Playlist-Script.ttf.woff') format('woff'),
+		url('fonts/Playlist-Script.ttf.svg#Playlist-Script') format('svg'),
+		url('fonts/Playlist-Script.ttf.eot'),
+		url('fonts/Playlist-Script.ttf.eot?#iefix') format('embedded-opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Playlist-Caps';
+	src:url('fonts/Playlist-Caps.ttf.woff') format('woff'),
+		url('fonts/Playlist-Caps.ttf.svg#Playlist-Caps') format('svg'),
+		url('fonts/Playlist-Caps.ttf.eot'),
+		url('fonts/Playlist-Caps.ttf.eot?#iefix') format('embedded-opentype');
+	font-weight: normal;
+	font-style: normal;
 }
