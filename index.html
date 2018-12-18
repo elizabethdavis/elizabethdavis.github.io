@@ -1,135 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Portfolio Website</title>
+
+	<!-- Meta Tags -->
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script> 
+
+    <!-- Local File Imports -->
+    <script src="typed.js"></script>
+	<script src="main.js"></script>
 	<link rel="stylesheet" href="styles.css">
+
+	<title>Portfolio Website</title>
 </head>
 
 <body>
-	<div class="header">
-		<a href="#default" class="logo">Elizabeth Davis</a>
 
+<!-- Navigation -->
+<div class="header" id="navHeader">
+	<a href="#default" class="logo">Elizabeth Davis</a>
 		<div class="header-right">
-			<a class="active" href="#home">Home</a>
-			<a href="#about">About</a>
-			<a href="#work">Work</a>
-			<a href="#passions">Passion Projects</a>
-			<a href="#contact">Contact</a>
-		</div>
+		<a class="active" href="#home">Home</a>
+		<a href="#about">About</a>
+		<a href="#work">Work</a>
+		<a href="#resume">Resume</a>
+		<a href="#contact">Contact</a>
 	</div>
 
-	<div class="card" id="slider">
-		<p>I'm a designer</p>
-	</div>
+	<!-- Sticky Header --> 
+	<script type="text/javascript">
+		// When the user scrolls the page, execute myFunction 
+		window.onscroll = function() {myFunction()};
 
-	<div class="row" id="about">
-	<div class="card">
-		<div class="two-column-left">
-		<div class="fakeimg" style="height:200px; width:200px">Image</div>
-						<!-- <img src="images/profile.jpg" alt="profile image" style="width: 250px; height: 250px;"> -->
-		</div>
-		<div class="two-column-right">
-			<h3>About Me</h3>
-			<p>Hello! My name is Elizabeth Davis and I am a user experience designer currently based in NYC. I have two degrees from The College of New Jersey (TCNJ) – a BS in Computer Science and a BA in Interactive Multimedia – and my job in design is the perfect combination of both.<br><br>I love to solve complex problems and use my imagination to make the world around me better. I have a little over three years of experience in the field and have been loving every minute of it. My greatest strengths include learning new techniques quickly, adapting on-the-go in an agile environment, and bringing my own set of fresh ideas. Let’s change the world!</p>
-				<a href="https://www.linkedin.com/in/elizmdavis/" target="_blank">LinkedIn</a>
-				<a href="https://medium.com/@elizmdavis" target="_blank">Medium</a>
-		</div>
-	</div> 
+		// Get the header
+		var header = document.getElementById("navHeader");
+
+		// Get the offset position of the navbar
+		var sticky = header.offsetTop;
+
+		// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+		function myFunction() {
+		  if (window.pageYOffset > sticky) {
+		    header.classList.add("sticky");
+		  } else {
+		    header.classList.remove("sticky");
+		  }
+		}
+	</script>
 </div>
 
-	<div class="row" id="skills">
-		<div class="card">	
-			<h3>Skills</h3>
-				<div class="three-column">
-					<b>Product Design</b><br>
-					User Experience Design<br>
-					Interface Design<br>
-					Wireframing<br>
-					Rapid Prototyping<br>
-					User Research<br>
-					Usability Testing<br>
-					Design Systems<br>
-					Agile Development<br>
-				</div>
-				<div class="three-column">
-					<b>Software</b><br>
-					Adobe Illustrator<br>
-					Sketch<br>
-					Adobe Photoshop<br>
-					Axure RP<br>
-					Adobe After Effects<br>
-					Invision Prototyping<br>
-					JIRA<br>
-					Confluence<br>
-				</div>
-				<div class="three-column">
-					<b>Languages</b><br>
-					HTML<br>
-					CSS<br>
-					JavaScript<br>
-					React.js<br>
-					MySQL<br>
-					Ruby<br>
-				</div>
+
+<!-- About -->
+<div class="content">
+<div class="row" id="about">
+	<h1>About Me</h1>
+	<div class="col-lg-3">
+		<img src="images/profile.jpg" alt="profile image" style="width: 250px; height: 250px;">
+	</div>
+	<div class="col-lg-9">		
+		<p>Hello! My name is Elizabeth Davis and I am a user experience designer currently based in NYC. I have two degrees from The College of New Jersey (TCNJ) – a BS in Computer Science and a BA in Interactive Multimedia – and my job in design is the perfect combination of both.<br><br>I love to solve complex problems and use my imagination to make the world around me better. I have a little over three years of experience in the field and have been loving every minute of it. My greatest strengths include learning new techniques quickly, adapting on-the-go in an agile environment, and bringing my own set of fresh ideas. Let’s change the world!</p>
+		<a href="https://www.linkedin.com/in/elizmdavis/" target="_blank">LinkedIn</a>
+		<a href="https://medium.com/@elizmdavis" target="_blank">Medium</a>
+	</div>
+</div>
+
+<hr>
+
+<!-- Skills -->
+<div class="row" id="skills">
+	<h1>Skills</h1>
+		<div class="col-sm-1"></div>
+		<div class="col-sm-3">
+			<h3>Product Design</h3>
+			User Experience Design<br>
+			Interface Design<br>
+			Wireframing<br>
+			Rapid Prototyping<br>
+			User Research<br>
+			Usability Testing<br>
+			Design Systems<br>
+			Agile Development<br><br>
 		</div>
-		
-	</div>
-
-	<div class="row">
-		<div class="card">
-			<button type="button">View my Resume</button>
+		<div class="col-sm-1"></div>
+		<div class="col-sm-3">
+			<h3>Software</h3>
+			Adobe Illustrator<br>
+			Sketch<br>
+			Adobe Photoshop<br>
+			Axure RP<br>
+			Adobe After Effects<br>
+			Invision Prototyping<br>
+			JIRA<br>
+			Confluence<br><br>
 		</div>
-	</div>
+		<div class="col-sm-1"></div>
+		<div class="col-sm-3">
+			<h3>Languages</h3>
+			HTML<br>
+			CSS<br>
+			JavaScript<br>
+			React.js<br>
+			MySQL<br>
+			Ruby<br><br>
+		</div>		
+</div>
 
-	<div class="row" id="work">
-		<div class="card">
-			<h3>UX Projects</h3>
-			<div class="four-column">
-				<div class="fakeimg" style="height:200px; width:200px">CAQH</div>
-			</div>
-			<div class="four-column">
-				<div class="fakeimg" style="height:200px; width:200px">Act III</div>
-			</div>
-			<div class="four-column">
-				<div class="fakeimg" style="height:200px; width:200px">AIA</div>
-			</div>
-			<div class="four-column">
-				<div class="fakeimg" style="height:200px; width:200px">Mission Slim-Possible</div>
-			</div>	
+
+<!-- Resume Redirect -->
+<div class="row" id="resume">
+	<button type="button" class="button">View my Resume</button>
+</div>
+
+<hr>
+
+<!-- UX Work -->
+<div class="row" id="work">
+	<h1>UX Projects</h1>
+		<div class="col-sm-3">
+			<img src="images/CAQH.jpg" alt="complex data applications in health care" class="responsive">
 		</div>
-	</div>
-
-	<div class="row" id="passions">
-		<div class="card">
-			<h3>Passion Projects</h3>
-			<div class="2col">The Kindness Counts</div>
-			<div class="2col">EDavis Artwork</div>
+		<div class="col-sm-3">
+			<img src="images/Act III.jpg" alt="designing an application for broadway" class="responsive">
 		</div>
-	</div>
-
-	<div class="row" id="contact">
-		<div class="card">
-			<h3>Contact Me</h3>
-			<div class="1col">
-				<form>
-					<p>Name</p>
-						<input type="text" name="name"><br>
-					<p>Email</p>
-						<input type="text" name="email"><br>
-					<p>Message</p>
-						<input type="text" name="message"><br>
-					<input type="submit" value="Submit">	
-				</form>
-			</div>
+		<div class="col-sm-3">
+			<img src="images/AIA.jpg" alt="auto insurance applications" class="responsive">
 		</div>
-	</div>
+		<div class="col-sm-3">
+			<img src="images/Mission Slimpossible.jpg" alt="creating applications encouraging kids health" class="responsive">
+		</div>	
+</div>
 
-	<div class="footer">
-		<h2>Footer</h2>
-		<p>&#169; 2019 Elizabeth Davis</p>
-	</div>
+<hr>
 
+<!-- Passion Projects -->
+<div class="row" id="passions">
+	<h1>Passion Projects</h1>
+	<div class="col-lg-6">
+		<img src="images/TKC.jpg" alt="The kindness counts" class="responsive">
+	</div>
+	<div class="col-lg-6">
+		<img src="images/EDArtwork.jpg" alt="EDavis artwork" class="responsive">
+	</div>
+</div>
+
+<hr>
+
+<!-- Contact Form -->
+<div class="row" id="contact">
+	<h1>Contact Me</h1>
+	<div class="col-lg-12">
+		<form action="contact.php" method="post">
+			<input type="text" name="name" placeholder="Name"><br>
+			<input type="text" name="email" placeholder="Email"><br>
+			<textarea name="message" rows="5" cols="40" placeholder="Message"></textarea><br>
+			<input type="submit" value="Submit">	
+		</form>
+	</div>
+</div>
+
+
+<!-- Footer -->
+<div class="footer">
+	<h1>Footer</h1>
+	<p>&#169; 2019 Elizabeth Davis</p>
+</div>
+
+</div>
 </body>
 </html>
