@@ -1,3 +1,4 @@
+/* Tag Styles */
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #ffffff;
@@ -11,6 +12,7 @@ h1 {
 
 h2 {
 	font-family: 'Poppins', 'sans-serif';
+	padding-top: 10px;
 	font-weight: 600;
 	font-size: 24px;
 	color: #2375F0;
@@ -20,6 +22,22 @@ h3 {
 	font-family: 'Poppins', 'sans-serif';
 	font-weight: 400;
 	font-size: 18px;
+}
+
+h4 {
+	font-family: 'Raleway', 'sans-serif';
+	font-size: 18px;
+	font-weight: 400;
+	text-align: center;
+}
+
+h5 {
+	font-family: 'Poppins', 'sans-serif';
+	font-weight: 600;
+}
+
+h6 {
+	font-family: 'Poppins', 'sans-serif';
 }
 
 a {
@@ -34,12 +52,17 @@ p {
 	font-weight: 400;
 }
 
+img {
+	border-radius: 6px;
+}
+
+/* Header Styles */
 .header {
 	overflow: hidden;
 	background-color: #ffffff;
-	padding: 30px 0px 15px 0px;
+	padding: 30px 0px 0px 0px;
 	z-index: 1000;
-	border-bottom: 2px solid lightgray;
+	border-bottom: 2px solid #f2f2f2;
 }
 
 .header a {
@@ -60,25 +83,25 @@ p {
 	text-align: left;
 }
 
-.header-right {
-	float: right;
-	padding-right: 30px;
+.navbar-brand {
+	padding-left: 125px;
 }
 
-.content {
-	padding: 20px 10px;
+
+.nav {
+	padding-right: 50px;
+	margin-bottom: 30px;
 }
 
-.sticky {
-	position: fixed;
-	top: 0;
+.container-fluid {
 	width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
-.sticky + .content {
-	padding-top: 120px;
-}
-
+/* Responsive Nav Items */
 @media screen and (max-width: 600px) {
 	.header a {
 		float: none;
@@ -93,15 +116,12 @@ p {
 	clear: both;
 }
 
-.content {
-	padding: 30px 50px;
-}
-
 #resume {
 	display: flex;
 	justify-content: center;
 }
 
+/* Buttons */
 .button {
 	background-color: #ffffff;
 	border: solid 1px black;
@@ -123,15 +143,6 @@ p {
 	border: solid 1px white;
 }
 
-.navbtn {
-	background-color: #ffffff;
-	color: white;
-}
-
-.active {
-
-}
-
 .responsive {
 	width: 100%;
 	height: auto;
@@ -142,10 +153,6 @@ p {
 	padding: 20px;
 	text-align: left;
 	background-color: #dddddd;
-}
-
-* {
-	box-sizing: border-box;
 }
 
 /* Fonts */

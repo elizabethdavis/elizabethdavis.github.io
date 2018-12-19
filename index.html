@@ -7,7 +7,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
 
     <!-- Bootstrap: Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
 
     <!-- Bootstrap: jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -33,41 +34,21 @@
 </head>
 
 <body>
-<div class="container">
-
-<!-- Navigation -->
+<!-- Navigation
 <div class="header" id="navHeader">
 	<a href="#home" class="logo">
 		Elizabeth Davis <br>
 		<h2>Product Designer<br>UX + UI + Interaction</h2>
 	</a>
-	<!-- <div class="header-right">
+	<div class="header-right">
 		<a class="active navbtn" href="#home">Home</a>
 		<a class="navbtn" href="#about">About</a>
 		<a class="navbtn" href="#work">Work</a>
 		<a class="navbtn" href="#resume">Resume</a>
 		<a class="navbtn" href="#contact">Contact</a>
-	</div> -->
+	</div>
 
-	<ul class="nav justify-content-end">
-		<li class="nav-item">
-			<a class="nav-link active" href="#">Home</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link" href="#">About</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link" href="#">Work</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link" href="#">Resume</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link" href="#">Contact</a>
-		</li>
-	</ul>
-
-	<!-- Sticky Header --> 
+	Sticky Header
 	<script type="text/javascript">
 		// When the user scrolls the page, execute myFunction 
 		window.onscroll = function() {myFunction()};
@@ -87,61 +68,82 @@
 		  }
 		}
 	</script>
-</div>
+</div> -->
 
+<nav class="nav header">
+	<div class="container-fluid">
+		<div class="nav-header">
+			<a class="navbar-brand logo" href="#">
+				Elizabeth Davis <br>
+				<h2>Product Designer<br>UX + UI + Interaction</h2>
+			</a>
+		</div>
+		<ul class="nav justify-content-end">
+			<li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+			<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+			<li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
+			<li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+			<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+		</ul>
+	</div>
+</nav>
+
+<div class="container">
 
 <!-- About -->
+<h1>About Me</h1>
 <div class="row" id="about">
-	<h1>About Me</h1>
 	<div class="col-lg-3">
 		<img src="images/profile.jpg" alt="profile image" style="width: 250px; height: 250px;">
 	</div>
 	<div class="col-lg-9">		
 		<p>Hello! My name is Elizabeth Davis and I am a user experience designer currently based in NYC. I have two degrees from The College of New Jersey (TCNJ) – a BS in Computer Science and a BA in Interactive Multimedia – and my job in design is the perfect combination of both.<br><br>I love to solve complex problems and use my imagination to make the world around me better. I have a little over three years of experience in the field and have been loving every minute of it. My greatest strengths include learning new techniques quickly, adapting on-the-go in an agile environment, and bringing my own set of fresh ideas. Let’s change the world!</p>
 		<a href="https://www.linkedin.com/in/elizmdavis/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a> |
-		<a href="https://medium.com/@elizmdavis" target="_blank"><i class="fab fa-medium"></i> Medium</a>
+		<a href="https://medium.com/@elizmdavis" target="_blank"><i class="fab fa-medium"></i> Medium</a> |
+		<a href="https://dribbble.com/elizmdavis" class="disabled" target="_blank"><i class="fab fa-dribbble"></i> Dribbble</a> |
+		<a href="https://github.com/elizabethdavis" target="_blank"><i class="fab fa-github"></i> Github</a>
 	</div>
 </div>
 
 <hr>
 
 <!-- Skills -->
+<h1>Skills</h1>
 <div class="row" id="skills">
-	<h1>Skills</h1>
-		<div class="col-sm-1"></div>
-		<div class="col-sm-3">
-			<h3>Product Design</h3>
-			User Experience Design<br>
-			Interface Design<br>
-			Wireframing<br>
-			Rapid Prototyping<br>
-			User Research<br>
-			Usability Testing<br>
-			Design Systems<br>
-			Agile Development<br><br>
-		</div>
-		<div class="col-sm-1"></div>
-		<div class="col-sm-3">
-			<h3>Software</h3>
-			Adobe Illustrator<br>
-			Sketch<br>
-			Adobe Photoshop<br>
-			Axure RP<br>
-			Adobe After Effects<br>
-			Invision Prototyping<br>
-			JIRA<br>
-			Confluence<br><br>
-		</div>
-		<div class="col-sm-1"></div>
-		<div class="col-sm-3">
-			<h3>Languages</h3>
-			HTML<br>
-			CSS<br>
-			JavaScript<br>
-			React.js<br>
-			MySQL<br>
-			Ruby<br><br>
-		</div>		
+	<div class="col-sm-1"></div>
+	<div class="col-sm-3">
+		<h3>Product Design</h3>
+		<p>User Experience Design<br>
+		Interface Design<br>
+		Wireframing<br>
+		Rapid Prototyping<br>
+		User Research<br>
+		Usability Testing<br>
+		Design Systems<br>
+		Agile Development<br><br></p>
+	</div>
+	<div class="col-sm-1"></div>
+	<div class="col-sm-3">
+		<h3>Software</h3>
+		<p>Adobe Illustrator<br>
+		Sketch<br>
+		Adobe Photoshop<br>
+		Axure RP<br>
+		Adobe After Effects<br>
+		Invision Prototyping<br>
+		JIRA<br>
+		Confluence<br><br></p>
+	</div>
+	<div class="col-sm-1"></div>
+	<div class="col-sm-3">
+		<h3>Languages</h3>
+		<p>HTML<br>
+		CSS<br>
+		JavaScript<br>
+		React.js<br>
+		MySQL<br>
+		Ruby<br><br></p>
+	</div>		
 </div>
 
 
@@ -153,27 +155,58 @@
 <hr>
 
 <!-- UX Work -->
-<div class="row" id="work">
-	<h1>UX Projects</h1>
-		<div class="col-sm-3">
-			<img src="images/CAQH.jpg" alt="complex data applications in health care" class="responsive">
+<h1>Project Work</h1>
+<div class="row">
+	<div class="card-deck">
+		<div class="card" style="width: 18rem;">
+			<img class="card-img-top" src="images/project-fakeimage.png" alt="Card image cap">
+			<div class="card-body">
+				<h5 class="card-title">Complex Data Applications in Healthcare</h5>
+				<h6 class="card-subtitle mb-2 text-muted">UX Designer</h6>
+				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				<a href="#" class="btn btn-primary">View Project</a>
+			</div>
 		</div>
-		<div class="col-sm-3">
-			<img src="images/Act III.jpg" alt="designing an application for broadway" class="responsive">
+
+		<div class="card" style="width: 18rem;">
+			<img class="card-img-top" src="images/project-fakeimage.png" alt="Card image cap">
+			<div class="card-body">
+				<h5 class="card-title">Usability Recommendations for Energy Companies</h5>
+				<h6 class="card-subtitle mb-2 text-muted">Usability Expert</h6>
+				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				<a href="#" class="btn btn-primary">View Project</a>
+			</div>
 		</div>
-		<div class="col-sm-3">
-			<img src="images/AIA.jpg" alt="auto insurance applications" class="responsive">
+
+		<div class="card" style="width: 18rem;">
+			<img class="card-img-top" src="images/project-fakeimage.png" alt="Card image cap">
+			<div class="card-body">
+				<h5 class="card-title">Mission Slim-possible</h5>
+				<h6 class="card-subtitle mb-2 text-muted">School Project</h6>
+				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				<a href="#" class="btn btn-primary">View Project</a>
+			</div>
 		</div>
-		<div class="col-sm-3">
-			<img src="images/Mission Slimpossible.jpg" alt="creating applications encouraging kids health" class="responsive">
-		</div>	
+
+		<div class="card" style="width: 18rem;">
+			<img class="card-img-top" src="images/project-fakeimage.png" alt="Card image cap">
+			<div class="card-body">
+				<h5 class="card-title">Act III</h5>
+				<h6 class="card-subtitle mb-2 text-muted">Personal Project</h6>
+				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				<a href="#" class="btn btn-primary">View Project</a>
+			</div>
+		</div>
+	</div>
 </div>
+
 
 <hr>
 
 <!-- Passion Projects -->
-<div class="row" id="passions">
 	<h1>Passion Projects</h1>
+<div class="row" id="passions">
+
 	<div class="col-lg-6">
 		<img src="images/TKC.jpg" alt="The kindness counts" class="responsive">
 	</div>
@@ -185,25 +218,42 @@
 <hr>
 
 <!-- Contact Form -->
-<div class="row" id="contact">
-	<h1>Contact Me</h1>
-	<div class="col-lg-12">
-		<form action="contact.php" method="post">
-			<input type="text" name="name" placeholder="Name"><br>
-			<input type="text" name="email" placeholder="Email"><br>
-			<textarea name="message" rows="5" cols="40" placeholder="Message"></textarea><br>
-			<input type="submit" value="Submit">	
-		</form>
-	</div>
-</div>
+<h1>Contact</h1>
+<form>
+	<div class="row">
+		<div class="col-md-6">
+    		<h3>Name</h3>
+      		<input type="text" class="form-control">
+    	</div>
+  	</div>
+  	<div class="row">
+    	<div class="col-md-6">
+    		<h3>Email Address</h3>
+      		<input type="email" class="form-control">
+    </div>
+  	</div>
+  	<div class="row">
+  		<div class="col-md-6">
+  			<h3>Message</h3>
+      		<input type="text" class="form-control">
+    	</div>
+  	</div>
+  	<div class="row">
+  		<div class="col-md-6 align-content-end">
+  			<button type="submit" class="button">Send</button>
+  		</div>
+  	</div>
+</form>
 
+</div>
 
 <!-- Footer -->
-<div class="footer">
-	<h1>Footer</h1>
-	<p>&#169; 2019 Elizabeth Davis</p>
+<div class="container-fluid">
+	<div class="footer col-lg-12">
+		<h4>Designed and coded with <i class="fas fa-heart"></i> by Elizabeth Davis<br>&#169; 2019</h4>
+	</div>
+</div>
 </div>
 
-</div>
 </body>
 </html>
