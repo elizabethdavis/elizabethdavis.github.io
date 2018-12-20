@@ -52,6 +52,12 @@ p {
 	font-weight: 400;
 }
 
+ul, li {
+	font-family: 'Raleway', 'sans-serif';
+	font-size: 14px;
+	font-weight: 400;
+}
+
 img {
 	border-radius: 6px;
 }
@@ -83,14 +89,28 @@ img {
 	text-align: left;
 }
 
+a:hover {
+	text-decoration: none;
+}
+
 .navbar-brand {
 	padding-left: 125px;
 }
 
-
 .nav {
 	padding-right: 50px;
 	margin-bottom: 30px;
+}
+
+.fa-linkedin, .fa-medium, .fa-dribbble, .fa-github {
+	color: #C4C4C4;
+	font-size: 48px;
+	margin: 5px;
+}
+
+.fa-linkedin:hover, .fa-medium:hover, .fa-dribbble:hover, .fa-github:hover {
+	color: #2375F0;
+	transition: color 0.5s ease;
 }
 
 .container-fluid {
@@ -119,6 +139,10 @@ img {
 #resume {
 	display: flex;
 	justify-content: center;
+}
+
+#resume-header, #resume-time {
+	color: #C4C4C4;
 }
 
 /* Buttons */
@@ -150,7 +174,8 @@ img {
 
 /* Footer */
 .footer {
-	padding: 20px;
+	padding: 30px;
+	margin-top: 50px;
 	text-align: left;
 	background-color: #dddddd;
 }
