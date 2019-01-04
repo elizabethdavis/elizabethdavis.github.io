@@ -33,11 +33,13 @@ h4 {
 
 h5 {
 	font-family: 'Poppins', 'sans-serif';
+	font-size: 16px;
 	font-weight: 600;
 }
 
 h6 {
 	font-family: 'Poppins', 'sans-serif';
+	font-size: 14px;
 }
 
 a {
@@ -52,7 +54,7 @@ p {
 	font-weight: 400;
 }
 
-ul, li {
+ul, li, td, tr {
 	font-family: 'Raleway', 'sans-serif';
 	font-size: 14px;
 	font-weight: 400;
