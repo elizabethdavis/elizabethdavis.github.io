@@ -54,14 +54,23 @@ p {
 	font-weight: 400;
 }
 
-ul, li, td, tr {
+ul, li, td, tr, figcaption {
 	font-family: 'Raleway', 'sans-serif';
 	font-size: 14px;
 	font-weight: 400;
 }
 
+figcaption {
+	text-align: center;
+}
+
 img {
 	border-radius: 6px;
+}
+
+.img-style {
+	width: 500px;
+	height: 330px;
 }
 
 /* Header Styles */
@@ -152,14 +161,14 @@ a:hover {
 	background-color: #ffffff;
 	border: solid 1px black;
 	color: black;
-	padding: 15px 40px 15px 40px;
+	padding: 10px 20px 10px 20px;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
 	margin: 4px 2px;
 	border-radius: 30px;
 	font-family: 'Poppins', 'sans-serif';
-	font-weight: bold;
+	font-weight: 600;
 	font-size: 16px;
 }
 
