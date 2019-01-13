@@ -1,0 +1,92 @@
+@font-face {
+	font-family: Lemonpaper;
+	src: url(../fonts/Lemon-Paper.ttf);
+}
+
+body {
+  font-family: Lemonpaper, Helvetica, sans-serif;
+  background-color: #ffffff;
+}
+
+h1 {
+	font-family: Lemonpaper, 'sans-serif';
+	font-weight: 400;
+	font-size: 30px;
+}
+
+h2 {
+	font-family: Lemonpaper, 'sans-serif';
+	padding-top: 10px;
+	font-weight: 400;
+	font-size: 24px;
+}
+
+h3 {
+	font-family: Lemonpaper, 'sans-serif';
+	font-weight: 400;
+	font-size: 18px;
+}
+
+h4 {
+	font-family: 'Open Sans', 'sans-serif';
+	font-size: 18px;
+	font-weight: 300;
+	text-align: center;
+}
+
+h5 {
+	font-family: Lemonpaper, 'sans-serif';
+	font-size: 16px;
+	font-weight: 200;
+	color: #AEAEAE;
+}
+
+h6 {
+	font-family: 'Open Sans', 'sans-serif';
+	font-size: 14px;
+}
+
+a {
+	font-family: 'Open Sans', 'sans-serif';
+	font-size: 14px;
+	font-weight: 300;
+	color: #000000;
+}
+
+p {
+	font-family: 'Open Sans', 'sans-serif';
+	font-size: 14px;
+	font-weight: 300;
+}
+
+ul, li, td, tr, figcaption {
+	font-family: 'Raleway', 'sans-serif';
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.profile {
+	border-radius: 50%;
+}
+
+.small-profile {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+}
+
+.banner {
+	background-color: #F6F6F6;
+	padding: 5px;
+	margin-bottom: 30px;
+}
+
+/* Footer */
+.footer {
+	padding: 30px;
+	margin-top: 50px;
+	border-top: 1px solid #d7d7d7;
+	text-align: left;
+	background-color: #ffffff;
+	color: #b7b7b7;
+}
