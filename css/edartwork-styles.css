@@ -4,7 +4,8 @@
 }
 
 body {
-  font-family: Lemonpaper, Helvetica, sans-serif;
+  font-family: 'Open Sans', 'sans-serif';
+  font-weight: 300;
   background-color: #ffffff;
 }
 
@@ -35,7 +36,7 @@ h4 {
 }
 
 h5 {
-	font-family: Lemonpaper, 'sans-serif';
+	font-family: 'Open Sans', 'sans-serif';
 	font-size: 16px;
 	font-weight: 200;
 	color: #AEAEAE;
@@ -60,7 +61,7 @@ p {
 }
 
 ul, li, td, tr, figcaption {
-	font-family: 'Raleway', 'sans-serif';
+	font-family: 'Open Sans', 'sans-serif';
 	font-size: 14px;
 	font-weight: 400;
 }
