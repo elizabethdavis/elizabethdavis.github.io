@@ -28,6 +28,10 @@
 	<script src="../js/main.js"></script>
 	<link rel="stylesheet" href="../css/edartwork-styles.css">
 
+	<!-- Bootstrap Lightbox -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+
 	<title>EDavis Artwork</title>
 </head>
 
@@ -73,6 +77,7 @@
 		</div>
 		<div class="row">
 			<div class="col-lg-3">
+				<img src="../projects/edavisartwork/Allison-BabyShower/title.png" style="width: 220px; height: 220px;">
 			</div>
 			<div class="col-lg-9">
 				<h2>Allison's Baby Shower</h2>
@@ -84,14 +89,50 @@
 		<br><br>
 
 		<div class="row">
+			<div class="col-lg-3">
+				<img src="../projects/edavisartwork/KatieDavid-Wedding/title.png" style="width: 220px; height: 220px;">
+			</div>
 			<div class="col-lg-9">
 				<h2>Katie and David's Wedding</h2>
 				<h5>August 2017</h5>
 				<p>For this project, I was asked to letter ~20 different quotes that would become a part of the centerpieces on each table at the wedding reception. The color theme was purple, gold, and black, and all of the quotes were advice or past quotes about love and marriage from friends and family of the bride and groom.</p>
-			</div>
-			<div class="col-lg-3">
+
+				<!-- Lightbox Images -->
+				<div class="row">
+					<div class="col-lg-12">
+						<a href="../projects/edavisartwork/KatieDavid-Wedding/decision.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+		                	<img src="../projects/edavisartwork/KatieDavid-Wedding/decision.jpg" class="img-fluid" style="width: 70px; height: 70px;">
+		            	</a>
+		            	<a href="../projects/edavisartwork/KatieDavid-Wedding/different.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+		                	<img src="../projects/edavisartwork/KatieDavid-Wedding/different.jpg" class="img-fluid" style="width: 70px; height: 70px;">
+		            	</a>
+		            	<a href="../projects/edavisartwork/KatieDavid-Wedding/know.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+		                	<img src="../projects/edavisartwork/KatieDavid-Wedding/know.jpg" class="img-fluid" style="width: 70px; height: 70px;">
+		            	</a>
+		            	<a href="../projects/edavisartwork/KatieDavid-Wedding/responsible.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+		                	<img src="../projects/edavisartwork/KatieDavid-Wedding/responsible.jpg" class="img-fluid" style="width: 70px; height: 70px;">
+		            	</a>
+		            	<a href="../projects/edavisartwork/KatieDavid-Wedding/rings.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+		                	<img src="../projects/edavisartwork/KatieDavid-Wedding/rings.jpg" class="img-fluid" style="width: 70px; height: 70px;">
+		            	</a>
+		            	<a href="../projects/edavisartwork/KatieDavid-Wedding/shared.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+		                	<img src="../projects/edavisartwork/KatieDavid-Wedding/shared.jpg" class="img-fluid" style="width: 70px; height: 70px;">
+		            	</a>
+		            	<a href="../projects/edavisartwork/KatieDavid-Wedding/special.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+		                	<img src="../projects/edavisartwork/KatieDavid-Wedding/special.jpg" class="img-fluid" style="width: 70px; height: 70px;">
+		            	</a>
+		            	<a href="../projects/edavisartwork/KatieDavid-Wedding/story.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+		                	<img src="../projects/edavisartwork/KatieDavid-Wedding/story.jpg" class="img-fluid" style="width: 70px; height: 70px;">
+		            	</a>
+		            	<a href="../projects/edavisartwork/KatieDavid-Wedding/supportive.jpg" data-toggle="lightbox" data-gallery="example-gallery">
+		                	<img src="../projects/edavisartwork/KatieDavid-Wedding/supportive.jpg" class="img-fluid" style="width: 70px; height: 70px;">
+		            	</a>
+	            	</div>
+	            </div>
 			</div>
 		</div>
+
+		<br>
 
 		<!-- Contact -->
 		<div class="row">
@@ -99,11 +140,12 @@
 			
 		</div>
 		<div class="row">
-			<div class="col-lg-5 justify-content-center">
-				<img src="../images/profile.jpg" class="small-profile" alt="profile image"><br><br>
+			<div class="col-lg-5 centerBlock">
+				<img src="../images/profile-2.png" class="small-profile" alt="profile image"><br><br>
 
 				<h1>Have any questions?</h1><br>
-				<p>I would love to talk with you about any projects you had in mind, or if you would like to see more of my work! Please feel free to reach out and I will get back to you!</p>
+				<p>Do you want to know more about me? Do you have an idea that I could help you with? You're in the right spot!! Feel free to reach out using this form! I would love to meet you and will get back to you soon!<br><br>Have a great day!</p>
+
 			</div>
 
 			<!-- Elfsight Widget -->
@@ -123,6 +165,14 @@
 		<h4>Designed and coded with <i class="fas fa-heart"></i> by Elizabeth Davis<br>&#169; 2019</h4>
 	</div>
 </div>
+
+<script>
+	$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+		showArrows: true;
+        event.preventDefault();
+        $(this).ekkoLightbox();
+    });
+</script>
 
 </body>
 </html>
