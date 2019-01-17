@@ -105,11 +105,10 @@ a:hover {
 }
 
 .navbar-brand {
-	padding-left: 125px;
+	padding-left: 10%;
 }
 
 .nav {
-	padding-right: 50px;
 	margin-bottom: 30px;
 }
 
