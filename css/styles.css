@@ -232,3 +232,27 @@ a:hover {
 	font-weight: normal;
 	font-style: normal;
 }
+
+/* Mobile */
+@media only screen and (max-width: 676px) {
+	.mobile-space-top {
+		margin-top:20px;
+	}
+
+	.card-deck {
+		margin-left: 40px;
+		margin-right: 40px;
+	}
+
+	img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;
+	}
+
+	.center {
+		text-align: center;
+	}
+}
+
