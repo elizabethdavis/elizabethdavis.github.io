@@ -2,6 +2,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #ffffff;
+  position: relative;
 }
 
 h1 {
@@ -89,7 +90,6 @@ img {
 	font-size: 16px;
 	line-height: 25px;
 	border-radius: 4px;
-	z-index: 1000;
 }
 
 .header, a.logo {
@@ -108,6 +108,10 @@ a:hover {
 
 .nav {
 	margin-bottom: 30px;
+}
+
+.banner {
+	text-align: left;
 }
 
 .fa-linkedin, .fa-medium, .fa-dribbble, .fa-github {
@@ -218,6 +222,12 @@ a:hover {
 	font-style: normal;
 }
 
+.container {
+	align-items: flex-start;
+	width: 100%;
+	margin: 0 auto;
+}
+
 /* Responsive Design for Mobile */
 @media only screen and (max-width: 676px) {
 	.mobile-space-top {
@@ -241,5 +251,21 @@ a:hover {
 		margin-left: 0.6em;
 		margin-right: auto;
 		display: block;
+	}
+
+	.d-flex {
+		margin-top: 30px;
+	}
+
+	div.sticky {
+		position: -webkit-sticky;
+		position: sticky;
+		top: 0;
+		background-color: #F6F6F6;
+		padding: 5px;
+		margin-bottom: 10px;
+		text-align: center;
+		z-index: 1;
+		padding-left: 0px;
 	}
 }
