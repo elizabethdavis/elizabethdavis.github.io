@@ -228,6 +228,88 @@ a:hover {
 	margin: 0 auto;
 }
 
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #ffffff;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #ddd;
+  color: #ffffff;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Active Dot on Slider */
+.active, .dot:hover {
+  background-color: #2375F0;
+}
+
+/* Quote Styling */
+q {
+	font-style: italic;
+	font-family: 'Raleway', 'sans-serif';
+	font-weight: 400;
+	font-size: 16px;
+}
+
+.author {
+	color: #2375F0;
+	font-family: 'Raleway', 'sans-serif';
+	font-size: 16px;
+}
+
 /* Responsive Design for Mobile */
 @media only screen and (max-width: 676px) {
 	.mobile-space-top {
