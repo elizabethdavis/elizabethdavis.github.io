@@ -310,6 +310,7 @@ q {
 	font-size: 16px;
 }
 
+/* Responsive iframe */
 .slides-container {
 	position: relative;
 	padding-bottom: 56.25%;
@@ -324,6 +325,18 @@ q {
 	left: 0;
 	width: 100%;
 	height: 100%;
+}
+
+div.sticky {
+		position: -webkit-sticky;
+		position: sticky;
+		top: 0;
+		background-color: #F6F6F6;
+		padding: 5px;
+		margin-bottom: 10px;
+		text-align: center;
+		z-index: 1;
+		padding-left: 0px;
 }
 
 /* Responsive Design for Mobile */
@@ -349,21 +362,5 @@ q {
 		margin-left: 0.6em;
 		margin-right: auto;
 		display: block;
-	}
-
-	.d-flex {
-		margin-top: 30px;
-	}
-
-	div.sticky {
-		position: -webkit-sticky;
-		position: sticky;
-		top: 0;
-		background-color: #F6F6F6;
-		padding: 5px;
-		margin-bottom: 10px;
-		text-align: center;
-		z-index: 1;
-		padding-left: 0px;
 	}
 }
