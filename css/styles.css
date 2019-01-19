@@ -201,27 +201,6 @@ a:hover {
 	color: #b7b7b7;
 }
 
-/* Fonts */
-@font-face {
-	font-family: 'Playlist-Script';
-	src:url('fonts/Playlist-Script.ttf.woff') format('woff'),
-		url('fonts/Playlist-Script.ttf.svg#Playlist-Script') format('svg'),
-		url('fonts/Playlist-Script.ttf.eot'),
-		url('fonts/Playlist-Script.ttf.eot?#iefix') format('embedded-opentype');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Playlist-Caps';
-	src:url('fonts/Playlist-Caps.ttf.woff') format('woff'),
-		url('fonts/Playlist-Caps.ttf.svg#Playlist-Caps') format('svg'),
-		url('fonts/Playlist-Caps.ttf.eot'),
-		url('fonts/Playlist-Caps.ttf.eot?#iefix') format('embedded-opentype');
-	font-weight: normal;
-	font-style: normal;
-}
-
 .container {
 	align-items: flex-start;
 	width: 100%;
