@@ -96,3 +96,33 @@ ul, li, td, tr, figcaption {
 	background-color: #ffffff;
 	color: #b7b7b7;
 }
+
+/* Responsive Design for Mobile */
+@media only screen and (max-width: 676px) {
+	.mobile-space-top {
+		margin-top:20px;
+	}
+
+	.card-deck {
+		margin-left: 40px;
+		margin-right: 40px;
+	}
+
+	img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;
+	}
+
+	.center {
+		text-align: center;
+		margin-left: 0.6em;
+		margin-right: auto;
+		display: block;
+	}
+
+	.centerBlock {
+		margin-top: 1em;
+	}
+}
