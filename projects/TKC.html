@@ -54,10 +54,10 @@
 	
 	<!-- Header -->
 	<div class="row">
-		<img src="../projects/tkc/TKC-Header.png" class="mx-auto" style="width: auto; height: 190px;">
+		<img src="../projects/tkc/TKC-Cool.png" class="mx-auto" style="width: auto; height: 190px;">
 	</div>
 
-	<img src="../projects/tkc/strokes/cool-stroke-4.png" class="divider">
+	<img src="../projects/tkc/strokes/cool-stroke-5.png" class="divider">
 
 	<!-- Mantra -->
 	<div class="row">
@@ -81,7 +81,7 @@
 		</div>
 	</div>
 
-	<img src="../projects/tkc/strokes/cool-stroke-5.png" class="divider">
+	<img src="../projects/tkc/strokes/cool-stroke-4.png" class="divider">
 
 	<!-- Values -->
 	<div class="row">
@@ -130,7 +130,7 @@
 		</div>
 	</div>
 
-	<img src="../projects/tkc/strokes/cool-stroke-4.png" class="divider">
+	<img src="../projects/tkc/strokes/cool-stroke-5.png" class="divider">
 
 	<!-- About Me -->
 	<div class="row">
@@ -151,49 +151,50 @@
 
 	<!-- Resources -->
 	<div class="row">
-		<div class="col-sm-12">
+		<div class="col">
 			<h3>Things That Count</h1>
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-sm-12">
+		<div class="col">
 			<p>Each month will feature resources on how we can help our planet. It can range from the companies that are worth our support, or just mindful ways to start creating less waste.</p>
 		</div>
 	</div>
 
-	<img src="../projects/tkc/strokes/cool-stroke-3.png" class="divider">
+	<img src="../projects/tkc/strokes/cool-stroke-2.png" class="divider">
 
 	<!-- Spotify -->
 	<div class="row">
-		<div class="col-sm-12">
+		<div class="col">
 			<h3>Playlists for your Mood</h1>
 		</div>
 	</div>
-	<div class="row">
-		<div class="col-sm-12">
-			<p>Every month I put out a spotify playlist that defines what I focus on for the month - if you have any suggestions I would love to hear them!</p>
 
-			<ul class="nav nav-tabs">
-			    <li class="active tab-style"><a href="#wellness" data-toggle="tab" class="link-style">June // Wellness</a></li>
-			    <li class="tab-style"><a href="#change" data-toggle="tab" class="link-style">May // Change</a></li>
-			    <li class="tab-style"><a href="#mindfulness" data-toggle="tab" class="link-style">April // Mindfulness</a></li>
-			    <li class="tab-style"><a href="#kindness" data-toggle="tab" class="link-style">March // Kindness</a></li>
+	<p>Every month I put out a spotify playlist that defines what I focus on for the month - if you have any suggestions I would love to hear them!</p>
 
-			</ul>
-
-			<div class="tab-content">
-			    <div id="wellness" class="tab-pane show active">
-			        <iframe src="https://open.spotify.com/embed/user/thekindnesscounts/playlist/2LrdoJWEVpoLAHmNn1EMaQ" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-			    </div>
-			    <div id="change" class="tab-pane">
-			        <iframe src="https://open.spotify.com/embed/user/thekindnesscounts/playlist/2ln4jn0F0XfitAduK6kjlD" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-			    </div>
-			    <div id="mindfulness" class="tab-pane">
-			        <iframe src="https://open.spotify.com/embed/user/thekindnesscounts/playlist/1ncohiqDqSrlOqWmS3LmyG" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-			    </div>
-			    <div id="kindness" class="tab-pane">
-			        <iframe src="https://open.spotify.com/embed/user/thekindnesscounts/playlist/3pnm8aGtcQf9UIF5D66F9b" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-			    </div>
+	<div class="row" id="playlist-container">
+		<div class="col-4" id="playlist-tab">
+			<div class="nav flex-column nav-tabs" role="tablist" aria-orientation="vertical">
+				<a class="nav-link active" id="wellness-tab" data-toggle="tab" href="#wellness" role="tab" aria-controls="wellness" aria-selected="true">June // Wellness</a>
+				<a class="nav-link" id="change-tab" data-toggle="tab" href="#change" role="tab" aria-controls="change" aria-selected="false">May // Change</a>
+				<a class="nav-link" id="mindfulness-tab" data-toggle="tab" href="#mindfulness" role="tab" aria-controls="mindfulness" aria-selected="false">April // Mindfulness</a>
+				<a class="nav-link" id="kindness-tab" data-toggle="tab" href="#kindness" role="tab" aria-controls="kindness" aria-selected="false">March // Kindness</a>
+			</div>
+		</div>
+		<div class="col-8" id="playlist">
+			<div class="tab-content" id="playlistContent">
+				<div class="container tab-pane active music-pane" id="wellness" role="tabpanel" aria-labelledby="wellness-tab">
+					<iframe src="https://open.spotify.com/embed/user/thekindnesscounts/playlist/2LrdoJWEVpoLAHmNn1EMaQ" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+				</div>
+				<div class="container tab-pane music-pane" id="change" role="tabpanel" aria-labelledby="change-tab">
+					<iframe src="https://open.spotify.com/embed/user/thekindnesscounts/playlist/2ln4jn0F0XfitAduK6kjlD" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+				</div>
+				<div class="container tab-pane music-pane" id="mindfulness" role="tabpanel" aria-labelledby="mindfulness-tab">
+					<iframe src="https://open.spotify.com/embed/user/thekindnesscounts/playlist/1ncohiqDqSrlOqWmS3LmyG" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+				</div>
+				<div class="container tab-pane music-pane" id="kindness" role="tabpanel" aria-labelledby="kindness-tab">
+					<iframe src="https://open.spotify.com/embed/user/thekindnesscounts/playlist/3pnm8aGtcQf9UIF5D66F9b" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -231,7 +232,7 @@
 		</div>
 	<!-- End Mailchimp-->
 
-	<img src="../projects/tkc/strokes/cool-stroke-2.png" class="divider">
+	<img src="../projects/tkc/strokes/cool-stroke-3.png" class="divider">
 
 	<!-- Sign Off -->
 	<div class="row">
