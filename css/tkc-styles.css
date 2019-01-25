@@ -1,50 +1,135 @@
+/* Font Import */
 @font-face {
-    font-family: 'Playlist-Caps';
-    src:url('../fonts/Playlist-Caps.ttf.woff') format('woff'),
-        url('../fonts/Playlist-Caps.ttf.svg#Playlist-Caps') format('svg'),
-        url('../fonts/Playlist-Caps.ttf.eot'),
-        url('../fonts/Playlist-Caps.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-family: 'SoulandHeaven-Regular';
+    src:url('../fonts/SoulandHeaven-Regular.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'Playlist-Script';
-    src:url('../fonts/Playlist-Script.ttf.woff') format('woff'),
-        url('../fonts/Playlist-Script.ttf.svg#Playlist-Script') format('svg'),
-        url('../fonts/Playlist-Script.ttf.eot'),
-        url('../fonts/Playlist-Script.ttf.eot?#iefix') format('embedded-opentype'); 
-    font-weight: normal;
-    font-style: normal;
-}
-
+/* Tags */
 h1 {
-	font-family: 'Playlist-Script', 'sans-serif';
-	font-size: 40px;
+	font-family: 'SoulandHeaven-Regular', 'open-sans';
+	font-size: 50px;
+	line-height: 1;
 }
 
 h2 {
-	font-family: 'Playlist-Caps', 'sans-serif';
+	font-family: 'SoulandHeaven-Regular', 'open-sans';
+	font-size: 45px;
+}
+
+h3 {
+	font-family: 'SoulandHeaven-Regular', 'open-sans';
 	font-size: 40px;
 }
 
-p, ul, li {
-	font-family: 'Quicksand', 'sans-serif';
-	font-weight: 300;
-}
-
 h4 {
-	font-family: 'Quicksand', 'sans-serif';
-	font-size: 18px;
+	font-family: 'Montserrat', 'open-sans';
+	font-size: 35px;
 	font-weight: 300;
 	text-align: center;
 }
 
-h1.sign-off {
+h5 {
+	font-family: 'SoulandHeaven-Regular', 'open-sans';
+	font-size: 30px;
+}
+
+h5.sign-off {
 	text-align: center; 
 	font-size: 45px; 
 	color: #ddd;
 }
+
+h6 {
+	font-family: 'Montserrat', 'open-sans';
+	font-size: 16px;
+}	
+
+p, ul, li {
+	font-family: 'Montserrat', 'open-sans';
+	font-weight: 300;
+}
+
+a {
+	font-family: 'Montserrat', 'open-sans';
+	font-weight: 300;
+	color: #000000;
+	text-decoration: underline;
+}
+
+div.background-stroke-1 {
+	background-image: url("../projects/tkc/strokes/warm-stroke-1-op.png");
+	background-repeat: no-repeat !important;
+	background-size: 100% 100%;
+}
+
+div.background-stroke-2 {
+	background-image: url("../projects/tkc/strokes/cool-stroke-1-op.png");
+	background-repeat: no-repeat !important;
+	background-size: 100% 100%;
+}
+
+img.divider {
+	width: 60%;
+	height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+/* Mailchimp Email Signup Form */
+#mailchimp {
+	background: #fff;
+	color: #3D6392;
+}
+
+#mailchimp .clear {
+	display: inline-block;
+}
+	
+#mailchimp input {
+	border: medium none;
+    color: #dddddd;
+    font-family: 'Montserrat', 'open-sans';
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding: 8px 10px;
+    border: solid 1px #e5e5e5;
+    width: 300px;
+		border-radius: 0px;
+		-moz-border-radius: 0px;
+		-webkit-border-radius: 0px;
+}
+		
+#mailchimp input.email { 
+	background: #fff 
+}
+
+#mailchimp input.name { 
+	background: #fff
+}
+
+#mailchimp input[type="submit"] {
+
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	font-size: 16px;
+	text-align: center;
+	transition: 0.5s;
+	width: 100%;
+	padding: 8px 40px;
+	background-image: linear-gradient(to right, #FCC872 0%, #FBB03B 40%, #F15A24 100%);
+}
+			
+#mailchimp input[type="submit"]:hover {  
+	background-image: linear-gradient(to left, #F15A24 0%, #FBB03B 40%, #FCC872 100%);
+	transition: 0.5s ease;
+}
+
 
 /* Tab Styling */
 .tab-content {
@@ -83,12 +168,23 @@ a.link-style:hover {
 	margin-bottom: 30px;
 }
 
+.center {
+	text-align: center;
+	color: #000;
+}
+
 /* Footer */
 .footer {
 	padding: 30px;
 	margin-top: 50px;
 	border-top: 1px solid #d7d7d7;
-	text-align: left;
+	text-align: center;
 	background-color: #ffffff;
 	color: #b7b7b7;
+}
+
+@media (max-width: 768px) {
+    #mc_embed_signup input.email {width:100%; margin-bottom:5px;}
+    #mc_embed_signup .clear {display: block; width: 100% }
+    #mc_embed_signup .button {width: 100%; margin:0; }
 }
