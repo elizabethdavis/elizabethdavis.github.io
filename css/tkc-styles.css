@@ -130,48 +130,59 @@ img.divider {
 	transition: 0.5s ease;
 }
 
-#playlist-container {
-	border: none;
-	background-color: #eee;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	border-radius: 0 8px 8px 8px;
+#playlist-nav {
+	padding-right: 0px;
+	padding-left: 0px;
 }
 
 #playlist-tab {
-	padding-right: 0px;
+	border: none;
 }
 
-#playlist {
+a.playlist-item {
+	border-radius: 6px 0 0 6px;
+	font-size: 14px;
+	line-height: 2.5;
+	padding-left: 15px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+a.playlist-item.active {
 	background-color: #fff;
-	border-radius: 8px;
+	overflow: hidden;
+}
+
+a.playlist-item:hover {
+	background-color: #e5e5e5;
+	color: #F15A24;
+}
+
+#playlist-pane {
+	background-color: #fff;
 	padding-left: 0px;
 	max-width: 750px;
 	width: auto;
+	border-radius: 6px;
 }
 
 #playlist-content {
 
 }
 
+#playlist-container>#playlist-nav>#playlist-tab>#playlist-item.active {
+	background-color: #fff;
+}
+
 .music-pane {
 	padding: 10px;
-}
-
-.nav-link:hover {
-	text-decoration: none;
-	background-color: #f4f4f4;
-	color: orange;
-}
-
-.nav-link.active {
-	border: none;
-	border-radius: 6px 0 0 6px;
 }
 
 .nav-tabs {
 	border: none;
 }
+
+
 
 a.nav-link {
 	font-size: 14px;
@@ -212,3 +223,81 @@ a.link-style:hover {
     #mc_embed_signup .clear {display: block; width: 100% }
     #mc_embed_signup .button {width: 100%; margin:0; }
 }
+
+/* Playlist Tab */
+
+.playlist {
+	background-color: #e5e5e5;
+	max-height: 425px;
+	border-radius: 4px;
+	border-radius: 4px;
+}
+
+img.playlist-cover {
+	width: 70%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.info {
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+p.playlist-info {
+	font-size: 14px;
+	text-align: center;
+	padding: 15px;
+}
+
+.tab {
+  float: left;
+  border: none;
+  padding-top: 10px;
+  background-color: #e5e5e5;
+  width: 22%;
+  height: auto;
+}
+
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 14px;
+  font-family: 'Raleway', 'open-sans';
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #e5e5e5;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ffffff;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: none;
+  width: 78%;
+  border-left: none;
+  background-color: #fff;
+}
+
