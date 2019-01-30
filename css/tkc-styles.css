@@ -58,18 +58,11 @@ a {
 	text-decoration: underline;
 }
 
-div.background-stroke-1 {
-	background-image: url("../projects/tkc/strokes/warm-stroke-1-op.png");
-	background-repeat: no-repeat !important;
-	background-size: 100% 100%;
+img {
+	border-radius: 4px;
 }
 
-div.background-stroke-2 {
-	background-image: url("../projects/tkc/strokes/cool-stroke-1-op.png");
-	background-repeat: no-repeat !important;
-	background-size: 100% 100%;
-}
-
+/* Color Stroke Divider Style */
 img.divider {
 	width: 60%;
 	height: auto;
@@ -78,6 +71,11 @@ img.divider {
 	margin-right: auto;
 	padding-bottom: 20px;
 	padding-top: 20px;
+}
+
+img.profile {
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /* Mailchimp Email Signup Form */
@@ -92,8 +90,8 @@ img.divider {
 	
 #mailchimp input {
 	border: medium none;
-    color: #dddddd;
-    font-family: 'Montserrat', 'open-sans';
+    color: #ddd;
+    font-family: 'Raleway', 'open-sans';
     font-size: 16px;
     margin-bottom: 10px;
     padding: 8px 10px;
@@ -122,7 +120,7 @@ img.divider {
 	transition: 0.5s;
 	width: 100%;
 	padding: 8px 40px;
-	background-image: linear-gradient(to right, #FCC872 0%, #FBB03B 40%, #F15A24 100%);
+	background-image: linear-gradient(to right, #0071bc 0%, #28abe1 40%, #00a99d 100%);
 }
 			
 #mailchimp input[type="submit"]:hover {  
@@ -130,79 +128,14 @@ img.divider {
 	transition: 0.5s ease;
 }
 
-#playlist-nav {
-	padding-right: 0px;
-	padding-left: 0px;
-}
-
-#playlist-tab {
-	border: none;
-}
-
-a.playlist-item {
-	border-radius: 6px 0 0 6px;
-	font-size: 14px;
-	line-height: 2.5;
-	padding-left: 15px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-}
-
-a.playlist-item.active {
-	background-color: #fff;
-	overflow: hidden;
-}
-
-a.playlist-item:hover {
-	background-color: #e5e5e5;
-	color: #F15A24;
-}
-
-#playlist-pane {
-	background-color: #fff;
-	padding-left: 0px;
-	max-width: 750px;
-	width: auto;
-	border-radius: 6px;
-}
-
-#playlist-content {
-
-}
-
-#playlist-container>#playlist-nav>#playlist-tab>#playlist-item.active {
-	background-color: #fff;
-}
-
-.music-pane {
-	padding: 10px;
-}
-
-.nav-tabs {
-	border: none;
-}
-
-
-
-a.nav-link {
-	font-size: 14px;
-	text-decoration: none;
-}
-
-a.link-style {
-	color: black;
-}
-
-a.link-style:hover {
-	color: orange;
-}
-
+/* Back to Portfolio */
 .banner {
 	background-color: #F6F6F6;
 	padding: 5px;
 	margin-bottom: 30px;
 }
 
+/* Center Align Class */
 .center {
 	text-align: center;
 	color: #000;
@@ -218,16 +151,10 @@ a.link-style:hover {
 	color: #b7b7b7;
 }
 
-@media (max-width: 768px) {
-    #mc_embed_signup input.email {width:100%; margin-bottom:5px;}
-    #mc_embed_signup .clear {display: block; width: 100% }
-    #mc_embed_signup .button {width: 100%; margin:0; }
-}
 
 /* Playlist Tab */
-
 .playlist {
-	background-color: #e5e5e5;
+	background-color: #EFEFEF;
 	max-height: 425px;
 	border-radius: 4px;
 	border-radius: 4px;
@@ -258,7 +185,7 @@ p.playlist-info {
   float: left;
   border: none;
   padding-top: 10px;
-  background-color: #e5e5e5;
+  background-color: #EFEFEF;
   width: 22%;
   height: auto;
 }
@@ -281,7 +208,7 @@ p.playlist-info {
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: #e5e5e5;
+  background-color: #e4e4e4;
 }
 
 /* Create an active/current "tab button" class */
@@ -301,3 +228,32 @@ p.playlist-info {
   background-color: #fff;
 }
 
+/* Responsive Designs */
+@media (max-width: 768px) {
+    #mc_embed_signup input.email {width:100%; margin-bottom:5px;}
+    #mc_embed_signup .clear {display: block; width: 100% }
+    #mc_embed_signup .button {width: 100%; margin:0; }
+}
+
+@media only screen and (max-width: 2600px) {
+	img.profile {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	p {
+		margin-top: 20px;
+		text-align: center;
+	}
+
+	h3, h5 {
+		text-align: center;
+	}
+
+	img.profile {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}

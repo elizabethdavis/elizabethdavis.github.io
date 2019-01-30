@@ -53,7 +53,7 @@
 	
 	<!-- Header -->
 	<div class="row">
-		<img src="../projects/tkc/TKC-Cool.png" class="mx-auto" style="width: auto; height: 190px;">
+		<img src="../projects/tkc/TKC-Cool.png" class="mx-auto" style="width: 400px; height: 150px;">
 	</div>
 
 	<img src="../projects/tkc/strokes/cool-stroke-5.png" class="divider">
@@ -75,7 +75,7 @@
 	</div>
 
 	<div class="row">
-		<div class="col">
+		<div class="col-sm-12">
 			<p>The Kindness Counts is all about things that count. In a world with such terrible things happening every day, we need to find a space for ourselves to be kind - to yourself, your environment, and to the people around you. This is a safe place where I am trying to make myself better as an environmental advocate, a friend, a resource, and most importantly, as a person. <br><br>Here you will find collections of resources that help you be kind to the planet, artwork that can inspire you to spread the message of kindness, music to help brighten your day, and so much more. My intention and driving force is to bring value to my life and yours in a meaningful, honest way. To me, that means sharing my knowledge and learnings along the way in a format that benefits your life, not taking from it. So stick around, explore, and follow me on my journey to Make Today Count.</p>
 		</div>
 	</div>
@@ -107,26 +107,27 @@
 
 	<!-- Monthly Expectations -->
 	<div class="row">
-		<div class="col">
+		<div class="col-sm-12">
 			<h3>Every Month, You Can Expect</h3>
 		</div>
 	</div>
 	<div class="row">
-		<div class="col">
-			<p>A weekly video where I discuss the theme of the month, products that count, and other fun things!</p>
-		</div>
-		<div class="col">
-			<p>A new playlist every month featuring songs that resonate with the theme</p>
-		</div>
-		<div class="col">
-			<p>Resources for products and companies that count</p>
-		</div>
-		<div class="col">
-			<p>Artwork featuring the Things that Count</p>
-		</div>
-		<div class="col">
-			<p>Activities that help you find what counts in your life!</p>
-		</div>
+			<div class="col">
+				<p>A weekly video where I discuss the theme of the month, products that count, and other fun things!</p>
+			</div>
+			<div class="col">
+				<p>A new playlist every month featuring songs that resonate with the theme</p>
+			</div>
+			<div class="col">
+				<p>Resources for products and companies that count</p>
+			</div>
+			<div class="col">
+				<p>Artwork featuring the Things that Count</p>
+			</div>
+			<div class="col">
+				<p>Activities that help you find what counts in your life!</p>
+			</div>
+
 	</div>
 
 	<img src="../projects/tkc/strokes/cool-stroke-5.png" class="divider">
@@ -138,10 +139,10 @@
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-sm-3 d-flex align-items-center ">
-			<img src="../images/profile.jpg" class="profile" alt="profile image" style="width: 200px; height: 200px;">
+		<div class="col-sm-12 col-md-5 col-lg-4 d-flex align-items-start">
+			<img src="../images/profile.jpg" class="profile" alt="profile image" style="width: 270px; height: 270px;">
 		</div>
-		<div class="col-sm-9">
+		<div class="col-sm-12 col-md-7 col-lg-8">
 			<p>Hi there! My name is Elizabeth Davis, the creator of The Kindness Counts. I wanted to start something that makes and impactful difference, because sitting around watching the world fall apart was making me miserable. In looking for resources on how to make a difference, I realized that it starts with just one person. However, there is a ton of information out there and it can get overwhelming quickly.<br><br>I wanted to create a safe space that could act as a resource for finding products that make a difference, how you can help in your everyday life, and encourage people to become the best version of themselves. If any of these things sounds like its up your alley, take a look at my videos, resources, or sign up for my newsletter that recaps everything I talk about every month. I hope you enjoy, and make today count!<br></p>
 			<h5>Elizabeth Davis</h5>
 		</div>
@@ -156,10 +157,10 @@
 		</div>
 	</div>
 	<div class="row">
-		<div class="col">
+		<div class="col-sm-12">
 			<p>Each month features resources on how we can Make Today Count. These products or services can range from the companies that are worth our support, mindful ways to start creating less waste, or my favorite ways to give back. Every month I send out a newsletter that details everything I covered in a brief, easy-to-share document that you can save for quick reference in the future, or share with your friends!</p>
 
-			<h3>This month...The Kindness Counts!</h3>
+			<h3>This month...<br>The Kindness Counts!</h3>
 		</div>
 	</div>
 
@@ -170,111 +171,72 @@
 		<div class="col">
 			<h3>Playlists for your Mood</h1>
 		</div>
+
+		<p>Every month I put out a spotify playlist that defines what I focus on for the month - if you have any suggestions I would love to hear them!</p>
+
 	</div>
 
-	<p>Every month I put out a spotify playlist that defines what I focus on for the month - if you have any suggestions I would love to hear them!</p>
+	<!-- Playlist Tabs -->
+	<div class="row playlist">
+		<div class="col-sm-12">
 
-<!--  
+				<div class="tab">
+					<button class="tablinks" onclick="openCity(event, 'wellness')" id="defaultOpen">June // Wellness</button>
+					<button class="tablinks" onclick="openCity(event, 'change')">May // Change</button>
+					<button class="tablinks" onclick="openCity(event, 'mindfulness')">April // Mindfulness</button>
+					<button class="tablinks" onclick="openCity(event, 'kindness')">March // Kindness</button>
+				</div>
 
-	<div class="row" id="playlist-container">
-		<div class="col-4" id="playlist-nav">
-			<div class="nav nav-tabs flex-column playlist-tab" role="tablist" aria-orientation="vertical">
-				<a class="playlist-item active" id="wellness-tab" data-toggle="tab" href="#wellness" role="tab" aria-controls="wellness" aria-selected="true">June // Wellness</a>
-				<a class="playlist-item" id="change-tab" data-toggle="tab" href="#change" role="tab" aria-controls="change" aria-selected="false">May // Change</a>
-				<a class="playlist-item" id="mindfulness-tab" data-toggle="tab" href="#mindfulness" role="tab" aria-controls="mindfulness" aria-selected="false">April // Mindfulness</a>
-				<a class="playlist-item" id="kindness-tab" data-toggle="tab" href="#kindness" role="tab" aria-controls="kindness" aria-selected="false">March // Kindness</a>
-			</div>
+
+				<div id="wellness" class="tabcontent">
+					<div class="row">
+						<div class="col-sm-5 info">
+							<img src="../projects/tkc/playlist/Wellness.jpg" class="d-flex align-content-center playlist-cover">
+							<p class="playlist-info">Wellness is all about loving the moment you're in and living a balanced life. We hope this playlist will inspire you to make the wellness count this month!</p>
+						</div>
+						<div class="col-sm-7">
+							<iframe src="https://open.spotify.com/embed/user/thekindnesscounts/playlist/2LrdoJWEVpoLAHmNn1EMaQ" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+						</div>
+					</div>
+				</div>
+
+				<div id="change" class="tabcontent">
+					<div class="row">
+						<div class="col-sm-5 info">
+							<img src="../projects/tkc/playlist/Change.jpg" class="d-flex align-content-center playlist-cover">
+							<p class="playlist-info">Change happens. This playlist will help you get through it - good or bad!</p>
+						</div>
+						<div class="col-sm-7">
+							<iframe src="https://open.spotify.com/embed/user/thekindnesscounts/playlist/2ln4jn0F0XfitAduK6kjlD" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+						</div>
+					</div>
+				</div>
+
+				<div id="mindfulness" class="tabcontent">
+					<div class="row">
+						<div class="col-sm-5 info">
+							<img src="../projects/tkc/playlist/Mindfulness.jpg" class="d-flex align-content-center playlist-cover">
+							<p class="playlist-info">In April, the Mindfulness counts! So sit back, pull up a yoga mat, clear your mind, and take some time to be mindful of this moment.</p>
+						</div>
+						<div class="col-sm-7">
+							<iframe src="https://open.spotify.com/embed/user/thekindnesscounts/playlist/1ncohiqDqSrlOqWmS3LmyG" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+						</div>
+					</div>
+				</div>
+
+				<div id="kindness" class="tabcontent">
+					<div class="row">
+						<div class="col-sm-5 info">
+							<img src="../projects/tkc/playlist/Kindness.jpg" class="d-flex align-content-center playlist-cover">
+							<p class="playlist-info">In our first month, the Kindness counts, obviously! Let this playlist encourage your best acts of kindness today.</p>
+						</div>
+						<div class="col-sm-7">
+							<iframe src="https://open.spotify.com/embed/user/thekindnesscounts/playlist/3pnm8aGtcQf9UIF5D66F9b" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+						</div>
+					</div>
+				</div>
 		</div>
-		<div class="col-8" id="playlist-pane">
-			<div class="tab-content" id="playlist-content">
-
-				<div class="container tab-pane active music-pane" id="wellness" role="tabpanel" aria-labelledby="wellness-tab">
-					<img src="../projects/tkc/playlist/Wellness.jpg" class="playlist-cover">
-					<iframe src="https://open.spotify.com/embed/user/thekindnesscounts/playlist/2LrdoJWEVpoLAHmNn1EMaQ" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-				</div>
-
-
-				<div class="container tab-pane music-pane" id="change" role="tabpanel" aria-labelledby="change-tab">
-					<img src="../projects/tkc/playlist/Change.jpg" class="playlist-cover">
-					<iframe src="https://open.spotify.com/embed/user/thekindnesscounts/playlist/2ln4jn0F0XfitAduK6kjlD" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-				</div>
-
-
-				<div class="container tab-pane music-pane" id="mindfulness" role="tabpanel" aria-labelledby="mindfulness-tab">
-					<img src="../projects/tkc/playlist/Mindfulness.jpg" class="playlist-cover">
-					<iframe src="https://open.spotify.com/embed/user/thekindnesscounts/playlist/1ncohiqDqSrlOqWmS3LmyG" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-				</div>
-
-
-				<div class="container tab-pane music-pane" id="kindness" role="tabpanel" aria-labelledby="kindness-tab">
-					<img src="../projects/tkc/playlist/Kindness.jpg" class="playlist-cover">
-					<iframe src="https://open.spotify.com/embed/user/thekindnesscounts/playlist/3pnm8aGtcQf9UIF5D66F9b" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-				</div>
-			</div>
-		</div>
 	</div>
--->
-
-<div class="row playlist">
-	<div class="col-sm-12">
-
-			<div class="tab">
-				<button class="tablinks" onclick="openCity(event, 'wellness')" id="defaultOpen">June // Wellness</button>
-				<button class="tablinks" onclick="openCity(event, 'change')">May // Change</button>
-				<button class="tablinks" onclick="openCity(event, 'mindfulness')">April // Mindfulness</button>
-				<button class="tablinks" onclick="openCity(event, 'kindness')">March // Kindness</button>
-			</div>
-
-
-			<div id="wellness" class="tabcontent">
-				<div class="row">
-					<div class="col-sm-5 info">
-						<img src="../projects/tkc/playlist/Wellness.jpg" class="d-flex align-content-center playlist-cover">
-						<p class="playlist-info">Wellness is all about loving the moment you're in and living a balanced life. We hope this playlist will inspire you to make the wellness count this month!</p>
-					</div>
-					<div class="col-sm-7">
-						<iframe src="https://open.spotify.com/embed/user/thekindnesscounts/playlist/2LrdoJWEVpoLAHmNn1EMaQ" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-					</div>
-				</div>
-			</div>
-
-			<div id="change" class="tabcontent">
-				<div class="row">
-					<div class="col-sm-5 info">
-						<img src="../projects/tkc/playlist/Change.jpg" class="d-flex align-content-center playlist-cover">
-						<p class="playlist-info">Change happens. This playlist will help you get through it - good or bad!</p>
-					</div>
-					<div class="col-sm-7">
-						<iframe src="https://open.spotify.com/embed/user/thekindnesscounts/playlist/2ln4jn0F0XfitAduK6kjlD" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-					</div>
-				</div>
-			</div>
-
-			<div id="mindfulness" class="tabcontent">
-				<div class="row">
-					<div class="col-sm-5 info">
-						<img src="../projects/tkc/playlist/Mindfulness.jpg" class="d-flex align-content-center playlist-cover">
-						<p class="playlist-info">In April, the Mindfulness counts! So sit back, pull up a yoga mat, clear your mind, and take some time to be mindful of this moment.</p>
-					</div>
-					<div class="col-sm-7">
-						<iframe src="https://open.spotify.com/embed/user/thekindnesscounts/playlist/1ncohiqDqSrlOqWmS3LmyG" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-					</div>
-				</div>
-			</div>
-
-			<div id="kindness" class="tabcontent">
-				<div class="row">
-					<div class="col-sm-5 info">
-						<img src="../projects/tkc/playlist/Kindness.jpg" class="d-flex align-content-center playlist-cover">
-						<p class="playlist-info">In our first month, the Kindness counts, obviously! Let this playlist encourage your best acts of kindness today.</p>
-					</div>
-					<div class="col-sm-7">
-						<iframe src="https://open.spotify.com/embed/user/thekindnesscounts/playlist/3pnm8aGtcQf9UIF5D66F9b" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-					</div>
-				</div>
-			</div>
-	</div>
-</div>
 
 	<img src="../projects/tkc/strokes/warm-stroke-5.png" class="divider">
 
