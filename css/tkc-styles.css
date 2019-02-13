@@ -1,37 +1,37 @@
 /* Font Import */
 @font-face {
-    font-family: 'SoulandHeaven-Regular';
-    src:url('../fonts/SoulandHeaven-Regular.ttf') format('ttf');
+    font-family: 'Silhouetto-Regular';
+    src:url('../fonts/Silhouetto-Regular.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 /* Tags */
 h1 {
-	font-family: 'SoulandHeaven-Regular', 'open-sans';
+	font-family: 'Silhouetto-Regular', 'Patrick Hand SC';
 	font-size: 50px;
 	line-height: 1;
 }
 
 h2 {
-	font-family: 'SoulandHeaven-Regular', 'open-sans';
+	font-family: 'Silhouetto-Regular', 'Patrick Hand SC';
 	font-size: 45px;
 }
 
 h3 {
-	font-family: 'SoulandHeaven-Regular', 'open-sans';
+	font-family: 'Silhouetto-Regular', 'Patrick Hand SC';
 	font-size: 40px;
 }
 
 h4 {
-	font-family: 'Montserrat', 'open-sans';
+	font-family: 'Silhouetto-Regular', 'Patrick Hand SC';
 	font-size: 35px;
 	font-weight: 300;
 	text-align: center;
 }
 
 h5 {
-	font-family: 'SoulandHeaven-Regular', 'open-sans';
+	font-family: 'Silhouetto-Regular', 'Patrick Hand SC';
 	font-size: 30px;
 }
 
@@ -74,6 +74,14 @@ img.divider {
 }
 
 img.profile {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.icon {
+	width: 100px;
+	height: auto;
+	display: block;
 	margin-left: auto;
 	margin-right: auto;
 }
