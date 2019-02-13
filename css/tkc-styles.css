@@ -165,7 +165,6 @@ img.values {
 /* Center Align Class */
 .center {
 	text-align: center;
-	color: #000;
 }
 
 /* Footer */
@@ -286,6 +285,11 @@ p.playlist-info {
 	p {
 		margin-top: 20px;
 		text-align: center;
+	}
+
+	.mobile-center {
+		text-align: center;
+		padding-bottom: 15px;
 	}
 
 	h3, h5 {
