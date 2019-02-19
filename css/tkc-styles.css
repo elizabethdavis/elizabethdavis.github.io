@@ -279,12 +279,26 @@ p.playlist-info {
 		display: block;
 		padding-bottom: 15px;
 	}
+
+	.playlist-hidden-text {
+		display: none;
+	}
 }
 
 @media only screen and (max-width: 768px) {
 	p {
 		margin-top: 20px;
 		text-align: center;
+	}
+
+	.playlist {
+		display: none;
+	}
+
+	.playlist-hidden-text {
+		display: inline;
+		text-align: center;
+		line-height: 2.5em;
 	}
 
 	.mobile-center {
