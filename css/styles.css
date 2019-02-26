@@ -74,6 +74,15 @@ img {
 	height: 330px;
 }
 
+.img-project {
+	max-width: 450px;
+	width: 100%;
+	height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .card-deck{
 	display: grid;
 	grid-template-columns: auto auto auto auto;
