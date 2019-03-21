@@ -349,6 +349,15 @@ div.sticky {
 	display: block;
 }
 
+.icons {
+	width: 30%;
+	height: auto;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	padding-bottom: 20px;
+}
+
 /* Responsive Design for Mobile */
 @media only screen and (max-width: 676px) {
 	img {
