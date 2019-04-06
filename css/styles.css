@@ -126,10 +126,8 @@ a:hover {
 	text-align: left;
 }
 
-.fa-linkedin, .fa-medium, .fa-dribbble, .fa-github {
-	color: #C4C4C4;
-	font-size: 48px;
-	margin: 5px;
+.fa-linkedin, .fa-medium, .fa-dribbble-square, .fa-github {
+	font-size: 14px;
 }
 
 .fa-linkedin:hover, .fa-medium:hover, .fa-dribbble:hover, .fa-github:hover {
@@ -356,6 +354,14 @@ div.sticky {
 	margin-left: auto;
 	display: block;
 	padding-bottom: 20px;
+}
+
+.company-icons {
+	width: 100%;
+	height: auto;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
 }
 
 /* Responsive Design for Mobile */
