@@ -37,6 +37,9 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js.map"></script>
 
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="../favicon.png">
+
 	<title>Elizabeth Davis - Design Jam</title>
 </head>
 
@@ -63,15 +66,69 @@
 
 	<!-- Project Description -->
 	<h3><b>UX Project:</b> Creative Design Jam</h3>
-	<h3><b>Company:</b> Carrier</h3>
+	<h3><b>Client:</b> Carrier CorConnect</h3>
 	<h3><b>Location:</b> New York City, NY</h3>
 	<h3><b>Duration:</b> 1 Week</h3><br>
 
-
+	<!-- Overview -->
 	<h1>Overview</h1>
-	<p>A design jam is a short, one week sprint to learn, wireframe, and design an application for a potential client. We had a small team consisting of designers and project managers to talk with the client, learn about the current product, and then take that knowledge and create a few screens to show ideas of what is possible. While it was an extremely condensed timeline, we were able to create wireframes, design comps, and an interactive prototype that really wowed the client with innovative thinking using proper user-friendly techniques.</p>
+	<div class="row">
+		<div class="col-lg-12">
+			<p>A design jam is a short, one week sprint to learn, wireframe, and design an application for a potential client. We had a small team consisting of designers and project managers to talk with the client, learn about the current product, and then take that knowledge and create a few screens to show ideas of what is possible. While it was an extremely condensed timeline, we were able to create wireframes, design comps, and an interactive prototype that really wowed the client with innovative thinking using proper user-friendly techniques.</p>
+		</div>
+	</div>
 
+	<br>
 
+	<!-- User Groups -->
+	<h1>User Groups</h1>
+	<div class="row">
+		<div class="col-lg-4" align="center">
+			<img src="../images/icons/factory.png" class="icons">
+			<h3>Factory Users</h3>
+			<p><i>Manage the product fleet, troubleshoot distributor issues, identify customer trends, manage distributor territories, and test new products.</i></p>
+		</div>
+		<div class="col-lg-4" align="center">
+			<img src="../images/icons/distributor.png" class="icons">
+			<h3>Distributors</h3>
+			<p><i>Troubleshoot dealer issues with the CorConnect system, daily dealer interactions, CorConnect portal assistance</i></p>
+		</div>
+		<div class="col-lg-4" align="center">
+			<img src="../images/icons/dealer.png" class="icons">
+			<h3>Dealers</h3>
+			<p><i>Dispatch technicians, provide remote customer & technician assistance, and identify available opportunities for new products</i></p>
+		</div>
+	</div>
+
+	<br>
+
+	<h1>Timeline</h1>
+	<p>Our team had one week to complete this project. We started with a knowledge session on the current state of the portal and its users, used design thinking methods to develop a solution, and used quick iterations to sketch, wireframe, and design rapidly.<i>(click on the image to enlarge it)</i></p>
+		
+		<div class="row justify-content-center">
+			<div class="col-lg-12">
+				<a href="../projects/carrier-files/timeline.jpg" data-toggle="lightbox" data-gallery="shower-gallery">
+		            <img src="../projects/carrier-files/timeline.jpg" class="img-fluid" style="width: 100%; height: auto;">
+		        </a>
+		    </div>
+		</div>
+
+	<br>
+
+	<!-- Features -->
+	<h3>Features to Include</h3>
+		<ul>
+			<li>Alert Notifications</li>
+			<li>Finding Customers</li>
+			<li>Fault History and Descriptions</li>
+			<li>Email Alerts</li>
+			<li>System Status Alerts</li>
+			<li>Notifications and Event Logs</li>
+			<li>Critical Alerts</li>
+			<li>Configuration of Customer Devices</li>
+			<li>Remote Troubleshooting</li>
+			<li>Equipment Setup</li>
+		</ul>
 
 	<!-- Contact Form -->
 	<script src="https://apps.elfsight.com/p/platform.js" defer></script>
@@ -85,6 +142,15 @@
 		<h4>Designed and coded with <i class="fas fa-heart"></i> by Elizabeth Davis<br>&#169; 2019</h4>
 	</div>
 </div>
+
+<!-- Lightbox -->
+<script>
+	$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+		showArrows: true;
+        event.preventDefault();
+        $(this).ekkoLightbox();
+    });
+</script>
 
 </body>
 </html>	
