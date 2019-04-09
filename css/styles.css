@@ -121,6 +121,17 @@ a:hover {
 	margin-bottom: 30px;
 }
 
+a.nav-style {
+	font-size: 14px;
+	color: #AAAAAA;
+	padding: 5px;
+}
+
+a.nav-style:hover {
+	color: #2375F0;
+	transition: color 0.5s ease;
+}
+
 .banner {
 	text-align: left;
 }
@@ -391,6 +402,15 @@ div.sticky {
 		display: block;
 	}
 
+	.linkLabel {
+		display: none;
+	}
+
+	.fa-linkedin, .fa-medium, .fa-dribbble-square, .fa-github, .fa-paper-plane {
+		font-size: 18px;
+		margin: 5px; 
+	}	
+
 }
 
 @media only screen and (max-width: 990px) {
@@ -401,6 +421,16 @@ div.sticky {
 		grid-template-columns: auto auto;
 		grid-gap: 0.2rem;
 	}
+
+	.linkLabel {
+		display: none;
+	}
+
+	.fa-linkedin, .fa-medium, .fa-dribbble-square, .fa-github, .fa-paper-plane {
+		font-size: 25px;
+		margin: 5px; 
+	}
+
 }
 
 @media only screen and (max-width: 768px) {	
@@ -437,4 +467,17 @@ div.sticky {
 		padding: 10px;
 		display: block;
 	}
+
+	.linkLabel {
+		display: none;
+	}
+
+	.fa-linkedin, .fa-medium, .fa-dribbble-square, .fa-github, .fa-paper-plane {
+		font-size: 30px;
+	}
+
+	ul.nav {
+		padding: 5px;
+	}
+
 }
