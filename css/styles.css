@@ -29,7 +29,6 @@ h4 {
 	font-family: 'Raleway', 'sans-serif';
 	font-size: 18px;
 	font-weight: 400;
-	text-align: center;
 }
 
 h5 {
@@ -136,13 +135,18 @@ a.nav-style:hover {
 	text-align: left;
 }
 
-.fa-linkedin, .fa-medium, .fa-dribbble-square, .fa-github {
+.fa-linkedin, .fa-medium, .fa-dribbble-square, .fa-github, .fa-paper-plane {
 	font-size: 14px;
 }
 
-.fa-linkedin:hover, .fa-medium:hover, .fa-dribbble:hover, .fa-github:hover {
+.fa-linkedin:hover, .fa-medium:hover, .fa-dribbble:hover, .fa-github:hover, .fa-paper-plane:hover {
 	color: #2375F0;
 	transition: color 0.5s ease;
+}
+
+.footer-icons {
+	font-size: 30px;
+	color: #AAAAAA;
 }
 
 .container-fluid {
@@ -219,6 +223,7 @@ a.nav-style:hover {
 	text-align: left;
 	background-color: #ffffff;
 	color: #b7b7b7;
+	text-align: center;
 }
 
 .container {
@@ -410,6 +415,14 @@ div.sticky {
 		font-size: 18px;
 		margin: 5px; 
 	}	
+
+	.company-icons {
+		width: 150%;
+		height: auto;
+		margin-right: auto;
+		margin-left: auto;
+		display: block;
+	}
 
 }
 
