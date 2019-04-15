@@ -82,6 +82,7 @@ img {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	border: 2px solid #eee;
 }
 
 .card-deck{
@@ -424,6 +425,22 @@ div.sticky {
 
 a.carousel-control-prev {
 	color: #000;
+}
+
+/* Carousel Indicators */
+.carousel-indicators li {
+	background-color: #999;
+	opacity: 0.4;
+}
+
+.carousel-indicators .active {
+	background-color: #444;
+	opacity: 0.5;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+	filter: invert(100%);
+	opacity: 0.4;
 }
 
 /* Responsive Design for different screens */
