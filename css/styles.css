@@ -39,7 +39,9 @@ h5 {
 
 h6 {
 	font-family: 'Poppins', 'sans-serif';
-	font-size: 14px;
+	font-size: 18px;
+	font-weight: 600;
+	color: #000000;
 }
 
 a {
@@ -86,6 +88,16 @@ img {
 	display: grid;
 	grid-template-columns: auto auto auto auto;
 	grid-gap: 0.2rem;
+}
+
+.card-subtitle {
+	color: #2375F0;
+}
+
+.quote {
+	background-color: #f6f6f6;
+	border-radius: 8px;
+	padding: 20px 20px 10px 20px;
 }
 
 /* Header Styles */
@@ -193,11 +205,6 @@ a.nav-style:hover {
 	color: white;
 	border: solid 1px white;
 	transition: 0.5s ease;
-}
-
-.responsive {
-	width: 100%;
-	height: auto;
 }
 
 .btn {
@@ -379,7 +386,47 @@ div.sticky {
 	display: block;
 }
 
-/* Responsive Design for Mobile */
+/* Accordion Styles */
+.panel-group .panel {
+    border-radius: 0;
+    box-shadow: none;
+    border-color: #EEEEEE;
+    }
+
+.panel-default > .panel-heading {
+    padding: 0;
+    border-radius: 0;
+    color: #212121;
+    background-color: #FAFAFA;
+    border-color: #EEEEEE;
+}
+
+.panel-title {
+    font-size: 14px;
+}
+
+.panel-title > a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.more-less {
+    float: right;
+    color: #212121;
+}
+
+.panel-default > .panel-heading + .panel-collapse > .panel-body {
+    border-top-color: #EEEEEE;
+    padding: 10px 20px;
+
+}
+
+a.carousel-control-prev {
+	color: #000;
+}
+
+/* Responsive Design for different screens */
 @media only screen and (max-width: 676px) {
 	img {
 		display: block;
@@ -422,26 +469,6 @@ div.sticky {
 		margin-right: auto;
 		margin-left: auto;
 		display: block;
-	}
-
-}
-
-@media only screen and (max-width: 990px) {
-	.card-deck {
-		margin-left: 40px;
-		margin-right: 40px;
-		display: grid;
-		grid-template-columns: auto auto;
-		grid-gap: 0.2rem;
-	}
-
-	.linkLabel {
-		display: none;
-	}
-
-	.fa-linkedin, .fa-medium, .fa-dribbble-square, .fa-github, .fa-paper-plane {
-		font-size: 25px;
-		margin: 5px; 
 	}
 
 }
@@ -494,3 +521,24 @@ div.sticky {
 	}
 
 }
+
+@media only screen and (max-width: 990px) {
+	.card-deck {
+		margin-left: 40px;
+		margin-right: 40px;
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-gap: 0.2rem;
+	}
+
+	.linkLabel {
+		display: none;
+	}
+
+	.fa-linkedin, .fa-medium, .fa-dribbble-square, .fa-github, .fa-paper-plane {
+		font-size: 25px;
+		margin: 5px; 
+	}
+
+}
+
