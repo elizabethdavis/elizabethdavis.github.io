@@ -56,6 +56,16 @@ p {
 	font-weight: 400;
 }
 
+div.detail-bubbles {
+	background-color: #2375F0;
+	color: #fff;
+	border-radius: 20px;
+	padding: 5px 10px;
+	font-size: 12px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
 ul, li, td, tr, figcaption {
 	font-family: 'Raleway', 'sans-serif';
 	font-size: 14px;
@@ -487,7 +497,6 @@ a.carousel-control-prev {
 		margin-left: auto;
 		display: block;
 	}
-
 }
 
 @media only screen and (max-width: 768px) {	
