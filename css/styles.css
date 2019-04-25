@@ -159,17 +159,19 @@ a.nav-style:hover {
 	text-align: left;
 }
 
-.fa-linkedin, .fa-medium, .fa-dribbble-square, .fa-github, .fa-paper-plane {
-	font-size: 14px;
-}
-
-.fa-linkedin:hover, .fa-medium:hover, .fa-dribbble:hover, .fa-github:hover, .fa-paper-plane:hover {
+.fa-linkedin:hover, .fa-medium:hover, .fa-dribbble-square:hover, .fa-github:hover, .fa-paper-plane:hover {
 	color: #2375F0;
 	transition: color 0.5s ease;
 }
 
 .footer-icons {
 	font-size: 30px;
+	color: #AAAAAA;
+}
+
+.nav-icons {
+	margin: 5px;
+	font-size: 35px;
 	color: #AAAAAA;
 }
 
@@ -391,7 +393,7 @@ div.sticky {
 }
 
 .company-icons {
-	width: 100%;
+	width: 75%;
 	height: auto;
 	margin-right: auto;
 	margin-left: auto;
@@ -482,14 +484,11 @@ a.carousel-control-prev {
 		display: block;
 	}
 
-	.linkLabel {
-		display: none;
+	.nav-icons {
+		margin: 2px;
+		font-size: 50px;
+		color: #AAAAAA;
 	}
-
-	.fa-linkedin, .fa-medium, .fa-dribbble-square, .fa-github, .fa-paper-plane {
-		font-size: 18px;
-		margin: 5px; 
-	}	
 
 	.company-icons {
 		width: 150%;
@@ -526,6 +525,12 @@ a.carousel-control-prev {
 		grid-gap: 0.2rem;
 	}
 
+	.nav-icons {
+		margin: 5px;
+		font-size: 45px;
+		color: #AAAAAA;
+	}
+
 	.responsive {
 		width: 80%;
 		height: auto;
@@ -537,10 +542,6 @@ a.carousel-control-prev {
 
 	.linkLabel {
 		display: none;
-	}
-
-	.fa-linkedin, .fa-medium, .fa-dribbble-square, .fa-github, .fa-paper-plane {
-		font-size: 30px;
 	}
 
 	ul.nav {
@@ -558,13 +559,15 @@ a.carousel-control-prev {
 		grid-gap: 0.2rem;
 	}
 
-	.linkLabel {
-		display: none;
+	.nav-icons {
+		margin: 5px;
+		font-size: 35px;
+		color: #AAAAAA;
 	}
 
-	.fa-linkedin, .fa-medium, .fa-dribbble-square, .fa-github, .fa-paper-plane {
-		font-size: 25px;
-		margin: 5px; 
+
+	.linkLabel {
+		display: none;
 	}
 
 }
