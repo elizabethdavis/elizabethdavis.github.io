@@ -146,7 +146,7 @@ a:hover {
 
 a.nav-style {
 	font-size: 14px;
-	color: #AAAAAA;
+	color: #E6E6E6;
 	padding: 5px;
 }
 
@@ -172,7 +172,7 @@ a.nav-style:hover {
 .nav-icons {
 	margin: 5px;
 	font-size: 35px;
-	color: #AAAAAA;
+	color: #E6E6E6;
 }
 
 .container-fluid {
@@ -219,6 +219,11 @@ a.nav-style:hover {
 	color: white;
 	border: solid 1px white;
 	transition: 0.5s ease;
+}
+
+.button-right {
+	display: flex;
+	justify-content: flex-end;
 }
 
 .btn {
@@ -487,7 +492,7 @@ a.carousel-control-prev {
 	.nav-icons {
 		margin: 2px;
 		font-size: 50px;
-		color: #AAAAAA;
+		color: #E6E6E6;
 	}
 
 	.company-icons {
@@ -528,7 +533,7 @@ a.carousel-control-prev {
 	.nav-icons {
 		margin: 5px;
 		font-size: 45px;
-		color: #AAAAAA;
+		color: #E6E6E6;
 	}
 
 	.responsive {
@@ -562,7 +567,7 @@ a.carousel-control-prev {
 	.nav-icons {
 		margin: 5px;
 		font-size: 35px;
-		color: #AAAAAA;
+		color: #E6E6E6;
 	}
 
 
