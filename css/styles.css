@@ -8,7 +8,7 @@ body {
 h1 {
 	font-family: 'Poppins', 'sans-serif';
 	font-weight: 600;
-	font-size: 28px;
+	font-size: 22px;
 }
 
 h2 {
@@ -96,12 +96,6 @@ img {
 	border: 2px solid #eee;
 }
 
-.card-deck{
-	display: grid;
-	grid-template-columns: auto auto auto auto;
-	grid-gap: 0.2rem;
-}
-
 .card-subtitle {
 	color: #2375F0;
 }
@@ -159,7 +153,7 @@ a.nav-style:hover {
 	text-align: left;
 }
 
-.fa-linkedin:hover, .fa-medium:hover, .fa-dribbble-square:hover, .fa-github:hover, .fa-paper-plane:hover {
+.fa-linkedin:hover, .fa-medium:hover, .fa-dribbble-square:hover, .fa-github:hover, .fa-paper-plane:hover, .fa-file-alt:hover {
 	color: #2375F0;
 	transition: color 0.5s ease;
 }
@@ -224,6 +218,14 @@ a.nav-style:hover {
 .button-right {
 	display: flex;
 	justify-content: flex-end;
+}
+
+.project-card {
+	height: 30rem;
+}
+
+.project-button {
+
 }
 
 .btn {
@@ -470,16 +472,12 @@ a.carousel-control-prev {
 		width: 50%;
 	}
 
-	.mobile-space-top {
-		margin-top:20px;
+	body {
+		margin: 30px;
 	}
 
-	.card-deck {
-		margin-left: 40px;
-		margin-right: 40px;
-		display: grid;
-		grid-template-columns: auto;
-		grid-gap: 0.2rem;
+	.mobile-space-top {
+		margin-top:20px;
 	}
 
 	.center {
@@ -507,6 +505,10 @@ a.carousel-control-prev {
 @media only screen and (max-width: 768px) {	
 	h1 {
 		text-align: center;
+	}
+
+	body {
+		margin: 30px;
 	}	
 
 	.header a {
@@ -520,14 +522,6 @@ a.carousel-control-prev {
 		margin-right: auto;
 		display: block;
 		padding-top: 10px;
-	}
-
-	.card-deck {
-		margin-left: 40px;
-		margin-right: 40px;
-		display: grid;
-		grid-template-columns: auto;
-		grid-gap: 0.2rem;
 	}
 
 	.nav-icons {
@@ -556,12 +550,9 @@ a.carousel-control-prev {
 }
 
 @media only screen and (max-width: 990px) {
-	.card-deck {
-		margin-left: 40px;
-		margin-right: 40px;
-		display: grid;
-		grid-template-columns: auto auto;
-		grid-gap: 0.2rem;
+
+	body {
+		margin: 30px;
 	}
 
 	.nav-icons {
