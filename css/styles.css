@@ -503,6 +503,11 @@ a.carousel-control-prev {
 		margin-left: auto;
 		display: block;
 	}
+
+	.button-mobile {
+		display: flex;
+		justify-content: space-evenly;
+	}
 }
 
 @media only screen and (max-width: 768px) {	
