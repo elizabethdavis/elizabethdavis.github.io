@@ -96,6 +96,17 @@ img {
 	border: 2px solid #eee;
 }
 
+.alignfull {
+	width: 100vw;
+	position: relative;
+	left: 50%;
+	margin-left: -50vw;
+}
+
+.alignfull img {
+	width: 100%;
+}
+
 .card-subtitle {
 	color: #2375F0;
 }
