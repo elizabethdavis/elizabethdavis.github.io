@@ -77,10 +77,6 @@ figcaption {
 	text-align: center;
 }
 
-img {
-	border-radius: 6px;
-}
-
 .img-style {
 	width: 500px;
 	height: 330px;
@@ -94,6 +90,20 @@ img {
 	margin-left: auto;
 	margin-right: auto;
 	border: 2px solid #eee;
+	border-radius: 8px;
+}
+
+.flex-column {
+    max-width: 260px;
+}
+        
+.scale {
+	transform: scaleY(1.05);
+	padding-top: 5px; 
+}
+
+.img-fluid {
+	margin: 5px;
 }
 
 .alignfull {
@@ -378,6 +388,7 @@ div.sticky {
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
+	border-radius: 6px;
 }
 
 .card-spacing {
