@@ -121,6 +121,10 @@ figcaption {
 	color: #2375F0;
 }
 
+.project-card {
+	align-items: center;
+}
+
 .quote {
 	background-color: #f6f6f6;
 	border-radius: 8px;
@@ -373,15 +377,15 @@ q {
 }
 
 div.sticky {
-		position: -webkit-sticky;
-		position: sticky;
-		top: 0;
-		background-color: #F6F6F6;
-		padding: 5px;
-		margin-bottom: 10px;
-		text-align: center;
-		z-index: 1;
-		padding-left: 0px;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	background-color: #F6F6F6;
+	padding: 5px;
+	margin-bottom: 10px;
+	text-align: center;
+	z-index: 1;
+	padding-left: 0px;
 }
 
 .profile-image {
@@ -404,6 +408,7 @@ div.sticky {
 	display: block;
 }
 
+/* Icon Styles */
 .icons {
 	width: 30%;
 	height: auto;
@@ -457,10 +462,6 @@ div.sticky {
 
 }
 
-a.carousel-control-prev {
-	color: #000;
-}
-
 /* Carousel Indicators */
 .carousel-indicators li {
 	background-color: #999;
@@ -475,6 +476,10 @@ a.carousel-control-prev {
 .carousel-control-next-icon, .carousel-control-prev-icon {
 	filter: invert(100%);
 	opacity: 0.4;
+}
+
+a.carousel-control-prev {
+	color: #000;
 }
 
 /* Responsive Design for different screens */
