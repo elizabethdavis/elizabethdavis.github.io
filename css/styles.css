@@ -491,7 +491,7 @@ a.carousel-control-prev {
 	}
 
 	.mobile-space-top {
-		margin-top:20px;
+		margin-top: 30px;
 	}
 
 	.center {
@@ -522,7 +522,7 @@ a.carousel-control-prev {
 }
 
 @media only screen and (max-width: 768px) {	
-	h1 {
+	h1, h2, h3 {
 		text-align: center;
 	}
 
@@ -533,6 +533,10 @@ a.carousel-control-prev {
 	.header a {
 		float: none;
 		padding-left: 0px;
+	}
+
+	p {
+		text-align: center;
 	}
 
 	.center {
