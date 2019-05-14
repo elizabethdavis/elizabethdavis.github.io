@@ -9,6 +9,7 @@ h1 {
 	font-family: 'Poppins', 'sans-serif';
 	font-weight: 600;
 	font-size: 22px;
+	padding-bottom: 10px;
 }
 
 h2 {
@@ -208,9 +209,9 @@ a.nav-style:hover {
 	clear: both;
 }
 
-#resume {
+.resume {
 	display: flex;
-	justify-content: center;
+	margin-inline-start: auto;
 }
 
 #resume-header, #resume-time {
