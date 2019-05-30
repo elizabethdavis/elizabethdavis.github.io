@@ -179,7 +179,7 @@ a.nav-style:hover {
 	text-align: left;
 }
 
-.fa-linkedin:hover, .fa-medium:hover, .fa-dribbble-square:hover, .fa-github:hover, .fa-envelope:hover, .fa-file-alt:hover {
+.fa-linkedin:hover, .fa-medium:hover, .fa-dribbble-square:hover, .fa-github-square:hover, .fa-envelope-square:hover, .fa-address-card:hover {
 	color: #2375F0;
 	transition: color 0.5s ease;
 }
