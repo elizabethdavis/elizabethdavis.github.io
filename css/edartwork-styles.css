@@ -87,6 +87,11 @@ ul, li, td, tr, figcaption {
 	margin-top: 5em;
 }
 
+.add-padding {
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
 /* Footer */
 .footer {
 	padding: 30px;
@@ -117,12 +122,17 @@ ul, li, td, tr, figcaption {
 
 	.center {
 		text-align: center;
-		margin-left: 0.6em;
-		margin-right: auto;
+		margin-left: 1em;
+		margin-right: 1em;
 		display: block;
 	}
 
 	.centerBlock {
 		margin-top: 1em;
+	}
+
+	.add-padding {
+		margin-left: 1em;
+		margin-right: 1em;
 	}
 }
