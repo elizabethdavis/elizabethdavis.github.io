@@ -25,16 +25,13 @@
 	<script defer src="https://use.fontawesome.com/releases/v5.6.1/js/fontawesome.js" integrity="sha384-T6YzYwAGZAItTIkYlBzfwqa07o9R1AND3Lgt6Or6c5IdukY7tqShoryqwpKrpeIB" crossorigin="anonymous"></script>
 
     <!-- Local File Imports -->
-    <script src="../js/typed.js"></script>
 	<script src="../js/main.js"></script>
 	<link rel="stylesheet" href="../css/styles.css">
 
 	<!-- Bootstrap Lightbox -->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" rel="stylesheet">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js.map"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js.map"></script>
 
 	<!-- Favicon -->
 	<link rel="shortcut icon" type="image/x-icon" href="../favicon.png">
@@ -52,32 +49,7 @@
 <div class="container">
 
 	<!-- Navigation -->
-	<nav class="nav header">
-		<div class="container-fluid">
-			<div class="nav-header">
-				<a class="navbar-brand logo center" href="../index.html">
-					Elizabeth Davis <br>
-					<h2>Senior UX Lead + Product Designer</h2>
-				</a>
-
-				<!-- Nav Links -->
-				<div class="nav justify-content-end center">
-					<li class="nav-item">
-						<a class="nav-link" href="../index.html">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="journey.html">Career Journey</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link active-nav" href="all-projects.html">Projects</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="files/ElizabethDavis_Resume_2026.pdf" target="_blank">Resume ↗</a>
-					</li>
-				</div>
-			</div>
-		</div>
-	</nav>
+<div id="header-placeholder"></div>
 
 	<!-- Project Description -->
 	<h3><b>UX Project:</b> Designing Complex Data Applications in Healthcare</h3>
@@ -710,28 +682,8 @@
 </div>
 
 <!-- Footer -->
-<div class="container-fluid">
-	<div class="footer col-lg-12">
-		<h4>Designed and coded with <i class="fas fa-heart"></i> by Elizabeth Davis &#169; 2024</h4>
-		<p>Icons by <a href="https://icons8.com/" target="_blank">Icons8</a></p>
-
-		<!-- Social Links -->
-		<a href="https://www.linkedin.com/in/elizmdavis/" target="_blank"><i class="fab fa-linkedin footer-icons"></i></a>
-
-		<a href="https://medium.com/@elizmdavis" target="_blank"><i class="fab fa-medium footer-icons"></i></a>
-
-		<a href="https://dribbble.com/elizmdavis" target="_blank"><i class="fab fa-dribbble-square footer-icons"></i></a>
-
-		<a href="https://github.com/elizabethdavis" target="_blank"><i class="fab fa-github-square footer-icons"></i></a>
-
-		<a href="mailto:elizmdavis94@gmail.com"><i class="fas fa-envelope-square footer-icons"></i></a>
-
-		<a href="files/ElizabethDavis_Resume_2026.pdf" target="_blank"><i class="fas fa-address-card footer-icons"></i></a>
-	</div>
-</div>
-</body>
-</html>
-
+<div id="footer-placeholder"></div>
+<script src="/js/includes.js"></script>
 <!-- Lightbox -->
 <script>
 	$(document).on('click', '[data-toggle="lightbox"]', function(event) {
@@ -750,3 +702,6 @@
 		$('.panel-group').on('hidden.bs.collapse', toggleIcon);
 		$('.panel-group').on('shown.bs.collapse', toggleIcon);
 </script>
+
+</body>
+</html>
