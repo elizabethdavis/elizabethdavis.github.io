@@ -31,6 +31,12 @@ function renderProjects(containerId, featuredOnly) {
         + '</div>'
         + '</div>';
     }).join('');
+    var remainder = group.length % groupSize;
+      if (remainder !== 0) {
+      for (var j = remainder; j < groupSize; j++) {
+        cards += '<div class="card project-card invisible" style="pointer-events:none;"></div>';
+       }
+      }
 
     html += '<div class="row">'
       + '<div class="card-deck cd-mobile">'

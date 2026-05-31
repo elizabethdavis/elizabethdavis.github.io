@@ -45,6 +45,15 @@ const projectsData = [
     featured: false
   },
   {
+    id: "buoy-explore",
+    title: "Real-Time Buoy Data Visualization",
+    subtitle: "Designer & Developer · Personal Project",
+    description: "A full-stack Python web app built during graduate research at URI that pulls live oceanographic data from NOAA's National Data Buoy Center and renders it as interactive charts in the browser. Built independently from scratch using Flask, Bokeh, and netCDF4.",
+    image: "/projects/buoy-tool.png",
+    link: "https://github.com/elizabethdavis/buoy-explore-app",
+    featured: false
+  },
+  {
     id: "caqh",
     title: "Complex Data Applications in Healthcare",
     subtitle: "UX & UI Designer",
@@ -70,5 +79,14 @@ const projectsData = [
     image: "/images/projects/duke.png",
     link: "/projects/duke.html",
     featured: false
-  }
+  },
+  {
+    id: "act3",
+    title: "Act III - A Mobile Application for Theatre Lovers",
+    subtitle: "Personal UX Project",
+    description: "A personal project exploring community-driven design — bringing together a community of theatre lovers through a purpose-built mobile experience.",
+    image: "/images/projects/Act3.png",
+    link: "/projects/ActIII.html",
+    featured: false
+},
 ];

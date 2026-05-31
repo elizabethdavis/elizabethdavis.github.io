@@ -589,6 +589,13 @@ a.carousel-control-prev {
 	color: #000;
 }
 
+.card-deck .card.invisible {
+    flex: 1 1 0%;
+    max-width: calc(25% - 30px);
+    min-width: 0;
+    margin: 0 15px;
+}
+
 /* Responsive Design for different screens */
 @media only screen and (max-width: 676px) {
 	img {
