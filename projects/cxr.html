@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<!-- Meta Tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+
+    <!-- Bootstrap: Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+    <!-- Bootstrap: jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Bootstrap: Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,500" rel="stylesheet">
+
+	<!-- FontAwesome Icons -->
+	<script defer src="https://use.fontawesome.com/releases/v5.6.1/js/all.js" integrity="sha384-R5JkiUweZpJjELPWqttAYmYM1P3SNEJRM6ecTQF05pFFtxmCO+Y1CiUhvuDzgSVZ" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.6.1/js/brands.js" integrity="sha384-rsLJp1pKbmeEMVcdsNJfAWZ9FQP5CrQt6Vikj/usZcTgrD28FhqYqKJn5XIaoXjm" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.6.1/js/fontawesome.js" integrity="sha384-T6YzYwAGZAItTIkYlBzfwqa07o9R1AND3Lgt6Or6c5IdukY7tqShoryqwpKrpeIB" crossorigin="anonymous"></script>
+
+    <!-- Local File Imports -->
+	<script src="../js/main.js"></script>
+	<link rel="stylesheet" href="../css/styles.css">
+
+	<!-- Bootstrap Lightbox -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="../favicon.png">
+
+	<title>Elizabeth Davis - Consumer Redesign</title>
+
+    <style>
+		.before-after-grid {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 16px;
+			margin: 24px 0;
+		}
+		.before-after-grid .label {
+			font-size: 11px;
+			font-weight: 600;
+			text-transform: uppercase;
+			letter-spacing: 0.08em;
+			padding: 4px 10px;
+			border-radius: 4px;
+			display: inline-block;
+			margin-bottom: 8px;
+		}
+		.label-before { background: #f0f0f0; color: #666; }
+		.label-after { background: #e8f0fe; color: #1a56db; }
+        .before-after-grid img {
+            width: 100%;
+            height: 480px;
+            object-fit: cover;
+            object-position: top;
+            border-radius: 8px;
+            border: 1px solid #e5e5e5;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .before-after-grid.mobile-pair {
+            grid-template-columns: 1fr 1fr;
+            max-width: 500px;
+            margin: 24px auto;
+        }
+
+        .before-after-grid.mobile-pair img {
+            height: 600px;
+            object-fit: cover;
+            object-position: top;
+        }
+		.before-after-grid .caption { font-size: 13px; color: #666; margin-top: 6px; }
+		.mobile-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+			gap: 16px;
+			margin: 24px 0;
+		}
+		.mobile-grid img {
+			width: 100%;
+			border-radius: 12px;
+			border: 1px solid #e5e5e5;
+			box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+		}
+		.mobile-grid .caption { font-size: 12px; color: #666; margin-top: 6px; text-align: center; }
+		.stat-row {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 16px;
+			margin: 24px 0;
+		}
+		.stat-card {
+			background: #f8f9ff;
+			border-radius: 8px;
+			padding: 20px;
+			text-align: center;
+			border: 1px solid #e8eaf6;
+		}
+		.stat-card .stat-number { font-size: 28px; font-weight: 700; color: #1a56db; font-family: 'Poppins', sans-serif; }
+		.stat-card .stat-label { font-size: 12px; color: #666; margin-top: 4px; }
+		.tag {
+			display: inline-block;
+			background: #f0f4ff;
+			color: #1a56db;
+			font-size: 12px;
+			padding: 4px 10px;
+			border-radius: 20px;
+			margin: 3px;
+			font-family: 'Poppins', sans-serif;
+		}
+		.section-divider { border: none; border-top: 1px solid #eee; margin: 32px 0; }
+		.highlight-box {
+			background: #f8f9ff;
+			border-left: 4px solid #1a56db;
+			padding: 16px 20px;
+			border-radius: 0 8px 8px 0;
+			margin: 24px 0;
+		}
+		.highlight-box p { margin: 0; color: #333; }
+		.role-meta {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+			gap: 12px;
+			margin: 20px 0 32px;
+		}
+		.role-meta-item { background: #f8f9fa; border-radius: 8px; padding: 12px 16px; }
+		.role-meta-item .meta-label { font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: #999; margin-bottom: 4px; }
+		.role-meta-item .meta-value { font-size: 13px; font-weight: 600; color: #333; }
+		.section-header { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: #1a56db; margin-bottom: 8px; }
+		.research-list { list-style: none; padding: 0; }
+		.research-list li {
+			padding: 10px 14px;
+			border-left: 3px solid #e8eaf6;
+			margin-bottom: 8px;
+			font-size: 14px;
+			color: #444;
+		}
+		.research-list li strong { color: #1a56db; }
+        .flow-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 12px;
+            margin: 24px 0;
+        }
+        .flow-grid img {
+            display: block;
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            object-position: top;
+            border-radius: 10px;
+            border: 1px solid #e5e5e5;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+        }
+		.flow-grid .caption { font-size: 11px; color: #888; margin-top: 4px; text-align: center; }
+		@media (max-width: 768px) {
+			.before-after-grid { grid-template-columns: 1fr; }
+			.stat-row { grid-template-columns: 1fr; }
+			.mobile-grid { grid-template-columns: repeat(2, 1fr); }
+			.flow-grid { grid-template-columns: repeat(2, 1fr); }
+		}
+	</style>
+</head>
+
+<body>
+
+<!-- Sticky Header -->
+<div class="banner sticky">
+	<a href="../index.html">Back to Portfolio</a>
+</div>
+
+<div class="container">
+
+	<!-- Navigation -->
+<div id="header-placeholder"></div>
+
+    <h1>End-to-end redesign of a consumer benefits platform — from research-validated problems to AI-powered resolution, across web and mobile</h1>
+
+	<!-- Project Description -->
+	<h3><b>Role:</b> End-to-End Design Lead + IC Designer</h3>
+	<h3><b>Company:</b> WEX, Inc. </h3>
+	<h3><b>Location:</b> Portland, ME</h3>
+    <h3><b>Platform:</b> Responsive Web + Mobile App</h3>
+	<h3><b>Duration:</b> April 2025 - Present</h3>
+
+	<!-- Tags -->
+	<div class="row">
+		<div class="col-xs-auto">
+			<div class="detail-bubbles">UX Design</div>
+		</div>
+		<div class="col-xs-auto">
+			<div class="detail-bubbles">AI-Assisted Prototyping</div>
+		</div>
+		<div class="col-xs-auto">
+			<div class="detail-bubbles">Design Systems</div>
+		</div>
+		<div class="col-xs-auto">
+			<div class="detail-bubbles">Information Architecture</div>
+		</div>
+		<div class="col-xs-auto">
+			<div class="detail-bubbles">Cursor + Figma</div>
+		</div>
+		<div class="col-xs-auto">
+			<div class="detail-bubbles">Design Leadership</div>
+		</div>
+	</div>
+
+	<br>
+
+    <!-- 
+    <div style="margin: 20px 0 8px;">
+        <a href="https://devops.benefits.azr.wexglobal.com/consumer-demo/" target="_blank" class="btn btn-primary" style="margin-right: 8px;">
+            View Live Prototype →
+        </a><br>
+        <span style="font-size: 13px; color: #888;">Built in Cursor · Responsive web + installable mobile PWA</span>
+    </div> -->
+
+	<!-- Banner  -->
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="alignfull">
+				<img src="cxr-files/consumerexperience-banner-hero.png" class="">
+			</div>
+		</div>
+	</div>
+
+	<br><br>
+
+	<!-- Overview -->
+	<div class="row">
+		<div class="col">
+            <h3><b>Benefits software has a usability crisis — and the data proved it</b></h3>
+            <p>The WEX CDH (Consumer-Driven Healthcare) platform enables employees to manage their tax-advantaged reimbursement accounts — HSA, FSA, DCFSA, LSA, LPFSA, and more — file claims, and get reimbursed for eligible expenses. HSA users can also invest directly on the platform. It's a financially meaningful product that touches people at some of the most stressful moments of their lives.</p>
+             
+            <p>The consumer portal had not received a serious design refresh since approximately 2016–2018. By 2024, the gap between what users expected from a modern financial product and what they were getting was significant — and measurable. Research efforts and customer feedback validated a consistent set of problems:</p>
+             
+            <ul class="research-list">
+                <li><strong>Login</strong> — Difficulty identifying the correct login path, frequent password reset failures, and Face ID issues on mobile forcing users to call the call center just to get in.</li>
+                <li><strong>Claims</strong> — Confusion around documentation requirements, a tedious manual entry process, and deep frustration trying to understand why claims were denied and what to do next. Claims confusion was one of the top drivers of call center volume.</li>
+                <li><strong>Enrollment</strong> — Outdated, inconsistent designs leading to usability failures; consumers enrolling without understanding the plans they were selecting.</li>
+                <li><strong>Life Events</strong> — One of the top reasons employees returned to the portal after enrollment, yet research found it deeply confusing to locate and complete.</li>
+                <li><strong>Reimbursement accounts</strong> — Card declines without explanation; confusion around plan rules and eligibility.</li>
+                <li><strong>Mobile</strong> — Poor mobile browser experience; the existing mobile app had a completely different design language from the portal and felt like a separate, dated product.</li>
+                <li><strong>Forms</strong> — Users still required to submit forms via paper, mail, and fax rather than digitally.</li>
+            </ul>
+             
+            <p>When consumers logged in, research identified five core jobs they were trying to accomplish:</p>
+            <ul class="research-list">
+                <li><strong>View account balances</strong> so they could manage their spending</li>
+                <li><strong>File a claim</strong> so they could get reimbursed</li>
+                <li><strong>View claim status</strong> so they knew where it was in the process</li>
+                <li><strong>Check recent transactions</strong> to monitor for fraud</li>
+                <li><strong>Check HSA investment performance</strong></li>
+            </ul>
+             
+            <p>The redesign goal was clear: rebuild the experience around what consumers actually come to do — and make the most common pain points (login, claims, reimbursement) so much better that call center volume drops and consumer confidence goes up.</p>
+		</div>
+	</div>
+
+	<!-- Role -->
+	<div class="row">
+		<div class="col">
+			<h2>My Role</h2>
+			<h3><b>End-to-end design lead and individual contributor</b></h3>
+            <p>My role on this project was dual — I provided design leadership and direction across both the portal and mobile app, while simultaneously working as an IC designer on teams that needed hands-on support. Every workflow and every screen across both platforms has had my involvement, whether I was setting the direction, doing the design work myself, or both.</p>
+		</div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <ul>
+                    <li>Set overall design vision and visual language for portal and mobile</li>
+                    <li>Led information architecture — restructured navigation from the ground up</li>
+                    <li>Designed and directed the AI assistant (WEXly / AssistIQ) experience</li>
+                    <li>Hands-on design work across all major portal flows</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <ul>
+                    <li>Led the 4-week mobile app prototype sprint using Cursor</li>
+                    <li>Managed team prototyping in Cursor including PR reviews and merges</li>
+                    <li>Introduced and trained the team on AI-assisted development workflows</li>
+                    <li>Drove stakeholder alignment through design strategy presentations</li>
+                </ul>
+            </div>
+        </div>
+	</div>
+
+	<br>
+
+	<!-- Banner Image
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="alignfull">
+				<img src="../projects/#" class="">
+			</div>
+		</div>
+	</div>  -->
+    <hr><br>
+
+	<!-- Data -->
+	<h1>The Portal Redesign</h1>
+    <h3><b>Login — removing friction at the front door</b></h3>
+    <p>Login was the #1 driver of call center contacts. The old experience was cluttered with promotional content, illustrated helpers, and competing CTAs — all the wrong things to show someone who just wants to get in. The new experience is focused: one task, passkey support for returning users, and a clean visual tone that sets expectations for the product inside.</p>
+     
+    <div class="before-after-grid">
+        <div>
+            <span class="label label-before">Before</span>
+            <a href="cxr-files/portal/1_login_old.png" data-toggle="lightbox" data-gallery="login">
+                <img src="cxr-files/portal/1_login_old.png" alt="Old login page">
+            </a>
+            <p class="caption">Cluttered with promotional banners, illustrated helpers, and multiple CTAs. Login issues were the top call center driver.</p>
+        </div>
+        <div>
+            <span class="label label-after">After</span>
+            <a href="cxr-files/portal/1_login_new.png" data-toggle="lightbox" data-gallery="login">
+                <img src="cxr-files/portal/1_login_new.png" alt="New login page">
+            </a>
+            <p class="caption">Single focused task with passkey support and a clean visual language that matches the redesigned portal inside.</p>
+        </div>
+    </div>
+
+    <h3><b>Homepage — from data dashboard to AI-powered assistant</b></h3>
+<p>The homepage is the most significant change in the redesign. The old homepage was a data dashboard that assumed users already knew what they were looking for. The new homepage leads with WEXly — an LLM-powered conversational assistant that lets consumers ask questions in natural language, get personalized responses based on their account data, and take real actions without navigating menus. Below the assistant, a contextual "Your Next Steps" card surfaces the most pressing action items automatically.</p>
+ 
+<div class="before-after-grid">
+	<div>
+		<span class="label label-before">Before</span>
+		<a href="cxr-files/portal/2_homepage_old.png" data-toggle="lightbox" data-gallery="homepage">
+			<img src="cxr-files/portal/2_homepage_old.png" alt="Old homepage">
+		</a>
+		<p class="caption">Data-first dashboard with competing widgets, seasonal banners, and "I Want To" quick links that assumed user intent.</p>
+	</div>
+	<div>
+		<span class="label label-after">After</span>
+		<a href="cxr-files/portal/2_homepage_new.png" data-toggle="lightbox" data-gallery="homepage">
+			<img src="cxr-files/portal/2_homepage_new.png" alt="New homepage">
+		</a>
+		<p class="caption">AI-forward homepage with a natural language benefits assistant, proactive task surfacing, and clean account summary below.</p>
+	</div>
+</div>
+ 
+<h3><b>Account summary</b></h3>
+<div class="before-after-grid">
+	<div>
+		<span class="label label-before">Before</span>
+		<a href="cxr-files/portal/3_account-summary_old.png" data-toggle="lightbox" data-gallery="accounts">
+			<img src="cxr-files/portal/3_account-summary_old.png" alt="Old account summary">
+		</a>
+		<p class="caption">Dense table displaying every account data point with no hierarchy or contextual guidance about what the numbers mean.</p>
+	</div>
+	<div>
+		<span class="label label-after">After</span>
+		<a href="cxr-files/portal/3_account-summary_new.png" data-toggle="lightbox" data-gallery="accounts">
+			<img src="cxr-files/portal/3_account-summary_new.png" alt="New account summary">
+		</a>
+		<p class="caption">Card-based view with visual progress indicators, key deadlines, and smart labels like "Use it or lose it" with spend deadlines inline.</p>
+	</div>
+</div>
+ 
+<h3><b>Claims — action-first instead of filter-first</b></h3>
+<p>Claims confusion was one of the top reasons consumers called in. The old experience presented claims as a flat filterable table — users had to know what they were looking for before they could find it. The new experience leads with an "Action Required" section that surfaces the most urgent items automatically, with clear status indicators, countdown timers for deadlines, and inline document upload that reduces the steps to resolution.</p>
+ 
+<div class="before-after-grid">
+	<div>
+		<span class="label label-before">Before</span>
+		<a href="cxr-files/portal/6_claims_old.png" data-toggle="lightbox" data-gallery="claims">
+			<img src="cxr-files/portal/6_claims_old.png" alt="Old claims page">
+		</a>
+		<p class="caption">Filter-first table requiring users to know what to look for. Status labels didn't guide action or explain next steps.</p>
+	</div>
+	<div>
+		<span class="label label-after">After</span>
+		<a href="cxr-files/portal/6_claims_new.png" data-toggle="lightbox" data-gallery="claims">
+			<img src="cxr-files/portal/6_claims_new.png" alt="New claims page">
+		</a>
+		<p class="caption">Action-first view with "Action Required" section, color-coded statuses, deadline countdowns, and inline document upload.</p>
+	</div>
+</div>
+ 
+<h3><b>Reimbursement — AI-assisted document analysis</b></h3>
+<div class="before-after-grid">
+	<div>
+		<span class="label label-before">Before</span>
+		<a href="cxr-files/portal/7_reimbursement_old.png" data-toggle="lightbox" data-gallery="reimbursement">
+			<img src="cxr-files/portal/7_reimbursement_old.png" alt="Old reimbursement">
+		</a>
+		<p class="caption">Form-first wizard requiring manual entry of all claim details across multiple sequential steps.</p>
+	</div>
+	<div>
+		<span class="label label-after">After</span>
+		<a href="cxr-files/portal/7_reimbursement_new.png" data-toggle="lightbox" data-gallery="reimbursement">
+			<img src="cxr-files/portal/7_reimbursement_new.png" alt="New reimbursement">
+		</a>
+		<p class="caption">Document-first flow with AI auto-analysis — upload a receipt and the system reads and pre-fills all claim details automatically.</p>
+	</div>
+</div>
+ 
+<h3><b>HSA investments, profile, and messages</b></h3>
+<div class="before-after-grid">
+	<div>
+		<span class="label label-before">Before — Investments</span>
+		<a href="cxr-files/portal/11_investments_old.png" data-toggle="lightbox" data-gallery="other">
+			<img src="cxr-files/portal/11_investments_old.png" alt="Old investments">
+		</a>
+		<p class="caption">Brokerage-style screen requiring financial literacy to parse.</p>
+	</div>
+	<div>
+		<span class="label label-after">After — Investments</span>
+		<a href="cxr-files/portal/11_investment_new.png" data-toggle="lightbox" data-gallery="other">
+			<img src="cxr-files/portal/11_investment_new.png" alt="New investments">
+		</a>
+		<p class="caption">Consumer-grade dashboard with performance chart, contribution progress, and HSA Planner showing goal status in plain language.</p>
+	</div>
+</div>
+ 
+<div class="before-after-grid">
+	<div>
+		<span class="label label-before">Before — Profile</span>
+		<a href="cxr-files/portal/8_profile_old.png" data-toggle="lightbox" data-gallery="other">
+			<img src="cxr-files/portal/8_profile_old.png" alt="Old profile">
+		</a>
+		<p class="caption">All data displayed simultaneously in a flat grid with no hierarchy.</p>
+	</div>
+	<div>
+		<span class="label label-after">After — Profile</span>
+		<a href="cxr-files/portal/8_profile_new.png" data-toggle="lightbox" data-gallery="other">
+			<img src="cxr-files/portal/8_profile_new.png" alt="New profile">
+		</a>
+		<p class="caption">Sidebar navigation grouping settings logically with a focused content area per section.</p>
+	</div>
+</div>
+ 
+<div class="before-after-grid">
+	<div>
+		<span class="label label-before">Before — Messages</span>
+		<a href="cxr-files/portal/10_message_old.png" data-toggle="lightbox" data-gallery="other">
+			<img src="cxr-files/portal/10_message_old.png" alt="Old messages">
+		</a>
+		<p class="caption">Chronological log of auto-generated notifications with no organization or urgency differentiation.</p>
+	</div>
+	<div>
+		<span class="label label-after">After — Messages</span>
+		<a href="cxr-files/portal/10_message_new.png" data-toggle="lightbox" data-gallery="other">
+			<img src="cxr-files/portal/10_message_new.png" alt="New messages">
+		</a>
+		<p class="caption">Full inbox with unread counts, starred messages, attention-needed filter, categories, and search.</p>
+	</div>
+</div>
+ 
+<h3><b>Admin portal — the other side of the platform</b></h3>
+<p>Employers and partners who configure these portals were working with a raw admin tool that exposed every configurable value as a direct form field — hundreds of hex color codes, icon uploads, and settings with no preview. The new admin portal is a proper product: brand management with live preview, AI agent customization (including naming and styling WEXly for each partner), and component styling controls.</p>
+ 
+<div class="before-after-grid">
+	<div>
+		<span class="label label-before">Before</span>
+		<a href="cxr-files/portal/12_admin_old.png" data-toggle="lightbox" data-gallery="admin">
+			<img src="cxr-files/portal/12_admin_old.png" alt="Old admin">
+		</a>
+		<p class="caption">Hundreds of raw form fields including hex color inputs and individual icon file uploads — requiring deep technical knowledge.</p>
+	</div>
+	<div>
+		<span class="label label-after">After</span>
+		<a href="cxr-files/portal/12_admin_new.png" data-toggle="lightbox" data-gallery="admin">
+			<img src="cxr-files/portal/12_admin_new.png" alt="New admin">
+		</a>
+		<p class="caption">Brand management tool with live preview, color pickers, component styling, and AI agent customization — configuration from hours to minutes.</p>
+	</div>
+</div>
+
+<!-- WEXLY AI ASSISTANT -->
+<p class="section-header">The AI Assistant — WEXly</p>
+<h3><b>From navigating menus to having a conversation</b></h3>
+<p>WEXly (branded as AssistIQ in the platform) is the AI-powered benefits assistant at the core of the new experience. It's not a FAQ bot or a search interface — it's a conversational LLM that has access to a consumer's actual account data and can take actions on their behalf.</p>
+ 
+<p>The most common reason consumers called in was claims confusion. WEXly was designed to resolve this entirely within the chat interface: a consumer asks about their claims, WEXly looks up their account, surfaces the specific claim needing attention, walks them through what documentation is required, accepts the document upload directly in the conversation, validates the document, and confirms claim approval — all without leaving the chat.</p>
+ 
+<div class="flow-grid">
+	<div>
+		<a href="cxr-files/mobile-app/assistiq/assist-iq_claims-1.png" data-toggle="lightbox" data-gallery="wexly">
+			<img src="cxr-files/mobile-app/assistiq/assist-iq_claims-1.png" alt="WEXly greeting">
+		</a>
+		<p class="caption">WEXly greets the user with suggested actions based on their account</p>
+	</div>
+	<div>
+		<a href="cxr-files/mobile-app/assistiq/assist-iq_claims-2.png" data-toggle="lightbox" data-gallery="wexly">
+			<img src="cxr-files/mobile-app/assistiq/assist-iq_claims-2.png" alt="User asks for help">
+		</a>
+		<p class="caption">User asks in plain English: "I need help with my claims"</p>
+	</div>
+	<div>
+		<a href="cxr-files/mobile-app/assistiq/assist-iq_claims-3.png" data-toggle="lightbox" data-gallery="wexly">
+			<img src="cxr-files/mobile-app/assistiq/assist-iq_claims-3.png" alt="WEXly thinking">
+		</a>
+		<p class="caption">WEXly looks up the account</p>
+	</div>
+	<div>
+		<a href="cxr-files/mobile-app/assistiq/assist-iq_claims-4.png" data-toggle="lightbox" data-gallery="wexly">
+			<img src="cxr-files/mobile-app/assistiq/assist-iq_claims-4.png" alt="WEXly surfaces claim">
+		</a>
+		<p class="caption">WEXly surfaces the specific claim needing documentation</p>
+	</div>
+	<div>
+		<a href="cxr-files/mobile-app/assistiq/assist-iq_claims-5.png" data-toggle="lightbox" data-gallery="wexly">
+			<img src="cxr-files/mobile-app/assistiq/assist-iq_claims-5.png" alt="Document requirements">
+		</a>
+		<p class="caption">Explains exactly what documents are needed and what they must include</p>
+	</div>
+	<div>
+		<a href="cxr-files/mobile-app/assistiq/assist-iq_claims-6.png" data-toggle="lightbox" data-gallery="wexly">
+			<img src="cxr-files/mobile-app/assistiq/assist-iq_claims-6.png" alt="Upload options">
+		</a>
+		<p class="caption">User can take a photo, select from library, or attach a file</p>
+	</div>
+	<div>
+		<a href="cxr-files/mobile-app/assistiq/assist-iq_claims-7.png" data-toggle="lightbox" data-gallery="wexly">
+			<img src="cxr-files/mobile-app/assistiq/assist-iq_claims-7.png" alt="Document uploaded">
+		</a>
+		<p class="caption">Document uploaded directly in the conversation</p>
+	</div>
+	<div>
+		<a href="cxr-files/mobile-app/assistiq/assist-iq_claims-8.png" data-toggle="lightbox" data-gallery="wexly">
+			<img src="cxr-files/mobile-app/assistiq/assist-iq_claims-8.png" alt="Submit documentation">
+		</a>
+		<p class="caption">One-tap submission from within the chat</p>
+	</div>
+	<div>
+		<a href="cxr-files/mobile-app/assistiq/assist-iq_claims-9.png" data-toggle="lightbox" data-gallery="wexly">
+			<img src="cxr-files/mobile-app/assistiq/assist-iq_claims-9.png" alt="Scanning document">
+		</a>
+		<p class="caption">"I'm scanning the uploaded document and extracting the details now..."</p>
+	</div>
+	<div>
+		<a href="cxr-files/mobile-app/assistiq/assist-iq_claims-10.png" data-toggle="lightbox" data-gallery="wexly">
+			<img src="cxr-files/mobile-app/assistiq/assist-iq_claims-10.png" alt="Claim approved">
+		</a>
+		<p class="caption">"Your document has been verified and your claim is approved for reimbursement!"</p>
+	</div>
+</div>
+
+<div class="highlight-box">
+<p>That last screen is the point. A consumer who would have called the call center, waited on hold, and navigated three menus to upload a document — instead typed one sentence and had their claim resolved. That's the design work that matters.</p>
+</div>
+	
+<!-- MOBILE APP -->
+<p class="section-header">The Mobile App</p>
+<h3><b>A cohesive experience across web and mobile — including a 4-week sprint</b></h3>
+<p>The existing mobile app had a completely different design language from the portal — blue section header bars, full-width button menus, a profile page that was literally just a stack of blue buttons, and a bottom nav that included "Log Out." It looked and felt like a separate, older product. One of the core goals of the redesign was a unified experience: the same card patterns, same color system, same nav structure, same assistant — whether you're on desktop or your phone.</p>
+ 
+<div class="before-after-grid mobile-pair">
+	<div>
+		<span class="label label-before">Before — Mobile Homepage</span>
+		<a href="cxr-files/mobile-app/2_homepage_mobile_old.png" data-toggle="lightbox" data-gallery="mobile">
+			<img src="cxr-files/mobile-app/2_homepage_mobile_old.png" alt="Old mobile homepage">
+		</a>
+		<p class="caption">Completely different design language — blue section bars, icon-linked list of actions, dated visual style with no consistency to the portal.</p>
+	</div>
+	<div>
+		<span class="label label-after">After — Mobile Homepage</span>
+		<a href="cxr-files/mobile-app/2_homepage_mobile_new.png" data-toggle="lightbox" data-gallery="mobile">
+			<img src="cxr-files/mobile-app/2_homepage_mobile_new.png" alt="New mobile homepage">
+		</a>
+		<p class="caption">Same card system, same AI assistant entry point, same visual language as the portal — a truly unified experience across devices.</p>
+	</div>
+</div>
+ 
+<h3><b>Mobile reimbursement — AI document analysis in your pocket</b></h3>
+<p>The AI-powered reimbursement flow is especially powerful on mobile. Take a photo of a receipt, and the system automatically reads the line items, flags eligible expenses, and pre-fills the claim. The review screen shows exactly what was found — in this case, Dental Exam, Teeth cleaning, X-rays, and Fluoride Treatment — all pre-selected and marked eligible.</p>
+ 
+<div class="before-after-grid">
+	<div>
+		<span class="label label-before">Before — Mobile Reimbursement</span>
+		<a href="cxr-files/mobile-app/7_reimbursement_mobile_old.png" data-toggle="lightbox" data-gallery="mobile-reimburse">
+			<img src="cxr-files/mobile-app/7_reimbursement_mobile_old.png" alt="Old mobile reimbursement">
+		</a>
+		<p class="caption">Multi-step manual form requiring users to enter all claim details themselves.</p>
+	</div>
+	<div>
+		<span class="label label-after">After — Mobile Reimbursement Review</span>
+		<a href="cxr-files/mobile-app/7_reimbursement_mobile_new.png" data-toggle="lightbox" data-gallery="mobile-reimburse">
+			<img src="cxr-files/mobile-app/7_reimbursement_mobile_new.png" alt="New mobile reimbursement">
+		</a>
+		<p class="caption">AI-analyzed receipt with auto-detected line items, eligibility flags, and pre-filled claim totals — ready to confirm in one tap.</p>
+	</div>
+</div>
+ 
+<h3><b>The 4-week mobile prototype sprint</b></h3>
+<p>In April 2026 — four weeks before our annual partner conference — we inherited an incomplete mobile app prototype from a consulting firm. The screens were unfinished and didn't align with the portal redesign we'd spent the past year developing. There was no way to show partners a coherent mobile experience at the conference.</p>
+ 
+<p>Rather than patching the consultant's work, we rebuilt it. Using Cursor and AI-assisted development, the team rebuilt the entire mobile app prototype as a responsive progressive web app — viewable on desktop and installable directly to a phone from a URL. Because we had a full year of portal design and discovery behind us, we weren't starting from zero — we were translating an already-mature design into a new format under a tight deadline.</p>
+ 
+<p>Partners at the conference scanned a QR code, installed the app to their phone, and experienced the new mobile product on their own device. The feedback was enthusiastically positive.</p>
+ 
+<div class="highlight-box">
+	<p>This sprint was only possible because designers could write the code themselves. No hand-off. No waiting on engineering resources. We designed it, built it, and shipped it — and the year of prior work meant we knew exactly what we were building.</p>
+</div>
+
+
+<h3><b>AI-assisted prototyping at org scale</b></h3>
+<p>The portal redesign was the proving ground for a new way of working across the design org. In December 2025 I introduced Cursor — an AI-assisted development environment — to the benefits design team. By February 2026 I had built and launched a custom Cursor workshop web app to onboard the entire 60-person WEX design organization to AI-assisted prototyping, enabling async self-paced learning without individual training sessions.</p>
+ 
+<p>The prototypes built in Cursor during this project are real, running web applications — not static mockups or click-through prototypes. They can be shared as URLs, respond to interaction, and connect to each other. This changed the nature of design reviews entirely: instead of presenting screens, we were presenting experiences.</p>
+
+<h3><b>What this project is really about</b></h3>
+<p>Benefits software affects people during some of the most stressful moments of their lives — when they're sick, when they need to understand coverage, when they're trying to afford care and figure out why their claim was denied. The gap between how these systems have historically been designed and how they could be designed is enormous.</p>
+ 
+<p>This project is an attempt to close that gap — through research-driven problem definition, an AI assistant that actually resolves problems instead of routing people to menus, a mobile experience that finally feels like it belongs to the same product, and a design process that stays close to the craft at every level.</p>
+ 
+<p>I was involved in every screen on both platforms — not just directing from above, but doing the work. That's the kind of designer I want to keep being.</p>
+
+	<br><br>
+
+	<!-- Project Redirects -->
+	<div class="row justify-content-end">
+		<div class="col-lg-6 button-mobile">
+			<a href="../index.html" class="button" role="button">< Back to Portfolio</a>
+		</div>
+		<div class="col-lg-6 button-right button-mobile">
+				<a href="../projects/benefit-assistant.html" class="button" role="button">Next Project ></a>
+		</div>
+	</div>
+
+</div>
+
+<!-- Footer -->
+<div id="footer-placeholder"></div>
+<script src="/js/includes.js"></script>
+
+<!-- Lightbox -->
+<script>
+	$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+		showArrows: true;
+        event.preventDefault();
+        $(this).ekkoLightbox();
+    });
+</script>
+
+</body>
+</html>

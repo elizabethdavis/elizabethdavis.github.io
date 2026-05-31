@@ -1,5 +1,14 @@
 const projectsData = [
   {
+    id: "consumer-redesign",
+    title: "Redesigning the CDH Consumer Portal for WEX",
+    subtitle: "Lead UX Designer",
+    description: "A complete reimagining of the CDH consumer experience — from legacy enterprise portal to modern, AI-forward product",
+    image: "/projects/cxr-files/cxr-web-mockup.png",
+    link: "/projects/cxr.html",
+    featured: true
+  },
+  {
     id: "benefit-assistant",
     title: "Creating an intelligent Benefit Assistant with AI",
     subtitle: "Lead UX Designer",
@@ -33,7 +42,7 @@ const projectsData = [
     description: "An analytics dashboard giving enterprise administrators powerful insights to drive engagement, improve retention, and optimize platform performance.",
     image: "/projects/pba-files/analytics-web-mockup.png",
     link: "/projects/PBA.html",
-    featured: true
+    featured: false
   },
   {
     id: "caqh",
@@ -60,15 +69,6 @@ const projectsData = [
     description: "A research based project on leading a usability analysis and presenting findings to stakeholders.",
     image: "/images/projects/duke.png",
     link: "/projects/duke.html",
-    featured: false
-  },
-  {
-    id: "actiii",
-    title: "Act III - A Mobile Application for Theatre Lovers",
-    subtitle: "Personal UX Project",
-    description: "A personal project that I started to bring together a community of theatre lovers.",
-    image: "/images/projects/Act3.png",
-    link: "/projects/ActIII.html",
     featured: false
   }
 ];
